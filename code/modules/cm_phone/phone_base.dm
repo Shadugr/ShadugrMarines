@@ -38,6 +38,8 @@
 
 /obj/structure/phone_base/proc/phone_ringing()
 	icon_state = PHONE_RINGING_ICON_STATE
+	if (istype(src, /obj/structure/phone_base/overwatch))
+		message_admins("[name] (Overwatch Phone) is ringing at [x], [y], [z]!")
 
 /obj/structure/phone_base/proc/phone_stopped_ringing()
 	if(icon_state == PHONE_OFF_BASE_UNIT_ICON_STATE)
@@ -103,3 +105,6 @@
 /obj/structure/phone_base/toc
 	name = "telephone receiver"
 	icon = 'icons/obj/vehicles/interiors/movie.dmi'
+
+/obj/structure/phone_base/overwatch
+	name = "overwatch receiver"

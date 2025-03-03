@@ -49,11 +49,6 @@
 	set category = "Emotes"
 	emote("faint", intentional = TRUE)
 
-/mob/living/carbon/human/verb/emote_signal()
-	set name = "○ Signal "
-	set category = "Emotes"
-	emote("signal", intentional = TRUE)
-
 /**
  * Generic Emotes
  */

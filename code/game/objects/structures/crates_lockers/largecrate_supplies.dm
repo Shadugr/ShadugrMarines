@@ -267,9 +267,14 @@
 	supplies = list(/obj/item/stack/sheet/plasteel/medium_stack = 2)
 
 /obj/structure/largecrate/supply/supplies/sandbags
-	name = "sandbag supply crate (x100)"
-	desc = "A supply crate containing four piles of twenty-five sandbags."
+	name = "sandbag supply crate (x200)"
+	desc = "A supply crate containing four piles of fifty sandbags."
 	supplies = list(/obj/item/stack/sandbags/large_stack = 4)
+
+/obj/structure/largecrate/supply/supplies/sandbags/empty
+	name = "empty sandbag supply crate (x200)"
+	desc = "A supply crate containing eight piles of fifty empty sandbags."
+	supplies = list(/obj/item/stack/sandbags_empty/full = 8)
 
 /obj/structure/largecrate/supply/supplies/tables_racks
 	name = "storage solutions crate (x10, x10)"

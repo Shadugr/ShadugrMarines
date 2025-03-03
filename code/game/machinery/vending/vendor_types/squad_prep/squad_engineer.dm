@@ -10,6 +10,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_engi, list(
 		list("UA 42-F Sentry Flamer", 0, /obj/item/defenses/handheld/sentry/flamer, MARINE_CAN_BUY_ATTACHMENT, VENDOR_ITEM_MANDATORY),
 		list("UA 571-C Sentry Gun", 0, /obj/item/defenses/handheld/sentry, MARINE_CAN_BUY_ATTACHMENT, VENDOR_ITEM_MANDATORY),
 		list("Sentry Upgrade kit", 15, /obj/item/engi_upgrade_kit, null, VENDOR_ITEM_REGULAR),
+		list("Sentry incinerator tank", 3, /obj/item/ammo_magazine/sentry_flamer, null, VENDOR_ITEM_REGULAR),
+		list("12g buckshot drum", 3, /obj/item/ammo_magazine/sentry/shotgun, null, VENDOR_ITEM_REGULAR),
 
 		list("ENGINEERING SUPPLIES", 0, null, null, null),
 		list("Airlock Circuit Board", 2, /obj/item/circuitboard/airlock, null, VENDOR_ITEM_REGULAR),

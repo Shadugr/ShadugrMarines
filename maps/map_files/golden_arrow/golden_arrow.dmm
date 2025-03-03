@@ -787,6 +787,10 @@
 	pixel_y = 28;
 	desc = "Semiotic Standard denoting the nearby presence of a hypersleep bay."
 	},
+/obj/structure/machinery/cm_vending/sorted/medical{
+	pixel_y = 0;
+	density = 0
+	},
 /turf/open/floor/almayer/edge/northwest,
 /area/golden_arrow/prep_hallway)
 "acZ" = (
@@ -5212,13 +5216,6 @@
 /area/golden_arrow/hangar)
 "asi" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/phone_base{
-	pixel_y = 30;
-	pixel_x = 9;
-	phone_id = "Overwatch";
-	name = "overwatch receiver";
-	phone_category = "Overwatch"
-	},
 /obj/structure/machinery/door_control{
 	pixel_y = 10;
 	pixel_x = 6;
@@ -5239,6 +5236,12 @@
 	pixel_x = 6;
 	id = "platco-privacy";
 	name = "privacy shutters"
+	},
+/obj/structure/phone_base/overwatch{
+	pixel_x = 9;
+	pixel_y = 30;
+	phone_id = "Overwatch";
+	phone_category = "Overwatch"
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoon_commander_rooms)
@@ -5939,6 +5942,7 @@
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/dorms)
 "avc" = (
+/obj/item/stack/sheet/plasteel/large_stack,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/supply)
 "avd" = (
@@ -9411,6 +9415,10 @@
 	layer = 2.52
 	},
 /obj/structure/surface/table/almayer,
+/obj/item/stack/sheet/plasteel/large_stack{
+	pixel_x = 6;
+	pixel_y = 10
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/hangar)
 "aGf" = (
@@ -10070,16 +10078,6 @@
 	},
 /turf/open/floor/almayer/plating_striped/north,
 /area/golden_arrow/engineering)
-"aIu" = (
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 4
-	},
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 18;
-	density = 0
-	},
-/turf/open/floor/almayer/edge/west,
-/area/golden_arrow/prep_hallway)
 "aIv" = (
 /obj/structure/ladder{
 	id = "engisouth"
@@ -13155,10 +13153,6 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 18;
-	density = 0
-	},
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/prep_hallway)
@@ -15067,6 +15061,13 @@
 	},
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/lower_cargo)
+"bwz" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/stack/sheet/metal/large_stack,
+/turf/open/floor/almayer/cargo,
+/area/golden_arrow/hangar)
 "bxi" = (
 /obj/structure/platform,
 /obj/structure/disposalpipe/segment{
@@ -15420,6 +15421,10 @@
 	pixel_x = 4
 	},
 /turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/supply)
+"cQd" = (
+/obj/item/stack/sheet/metal/large_stack,
+/turf/open/floor/almayer,
 /area/golden_arrow/supply)
 "cQH" = (
 /obj/structure/machinery/door/poddoor/almayer{
@@ -15893,6 +15898,7 @@
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = -23
 	},
+/obj/item/stack/sheet/metal/large_stack,
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
 "ewl" = (
@@ -15956,10 +15962,9 @@
 	fill_from_loc = 1
 	},
 /obj/item/stack/sheet/metal/large_stack,
-/obj/item/stack/sheet/plasteel{
-	amount = 40;
-	pixel_x = 7;
-	pixel_y = 6
+/obj/item/stack/sheet/plasteel/large_stack{
+	pixel_x = 6;
+	pixel_y = 10
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/supply)
@@ -16039,15 +16044,14 @@
 	pixel_y = 31;
 	opacity = 0
 	},
-/obj/structure/largecrate/supply/supplies/sandbags{
-	pixel_y = -6;
-	layer = 3.1;
-	pixel_x = -3
-	},
 /obj/item/storage/toolbox/mechanical/green{
 	pixel_y = 5;
 	layer = 3.2;
 	pixel_x = -3
+	},
+/obj/structure/largecrate/supply/supplies/sandbags/empty{
+	pixel_x = -3;
+	pixel_y = -6
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
@@ -17618,6 +17622,10 @@
 /obj/structure/largecrate/supply/floodlights{
 	pixel_y = -9
 	},
+/obj/item/stack/sheet/plasteel/large_stack{
+	pixel_x = 6;
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
 "ljO" = (
@@ -18497,6 +18505,9 @@
 	light_color = "#dae2ff";
 	light_power = 0.3
 	},
+/obj/structure/largecrate/supply/supplies/sandbags/empty{
+	pixel_y = 0
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
 "nxj" = (
@@ -18790,6 +18801,16 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
+"owc" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/largecrate/supply/supplies/sandbags/empty{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/supply)
 "oxf" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -19298,6 +19319,13 @@
 	},
 /turf/open/floor/almayer/edge/east,
 /area/golden_arrow/supply)
+"qiE" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/stack/sheet/metal/large_stack,
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/supply)
 "qiX" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -19790,6 +19818,10 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
+"scB" = (
+/obj/item/stack/sheet/metal/large_stack,
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/hangar)
 "sdp" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = -23
@@ -26623,7 +26655,7 @@ aog
 afT
 aAP
 aHc
-aIu
+auL
 aTH
 aHc
 avi
@@ -29605,7 +29637,7 @@ aEK
 bBB
 ahl
 ahl
-afz
+cQd
 aOp
 nzo
 aej
@@ -31190,7 +31222,7 @@ aEG
 aEG
 vYW
 cqk
-vve
+qiE
 aAu
 afz
 aAu
@@ -32261,7 +32293,7 @@ ahl
 ahl
 xHO
 mtK
-aAu
+owc
 nOf
 aHZ
 aJY
@@ -33708,7 +33740,7 @@ acw
 aUD
 aTA
 aos
-aDz
+bwz
 aCp
 azL
 aJh
@@ -34209,7 +34241,7 @@ aPk
 abA
 adU
 aRB
-aMz
+scB
 aMz
 ajZ
 aFf

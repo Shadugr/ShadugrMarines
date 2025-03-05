@@ -15416,9 +15416,9 @@
 /area/golden_arrow/medical)
 "cMX" = (
 /obj/structure/surface/table/reinforced/black,
-/obj/item/storage/box/nade_box/smoke{
-	pixel_y = 7;
-	pixel_x = 4
+/obj/item/storage/box/nade_box/smoke/red{
+	pixel_x = 4;
+	pixel_y = 7
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
@@ -15573,6 +15573,9 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad_prep{
 	req_one_access = list();
 	req_one_access_txt = "8;12;39;40;22;27"
+	},
+/obj/item/storage/box/nade_box/flare{
+	pixel_x = 1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)

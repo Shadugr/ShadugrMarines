@@ -15574,9 +15574,6 @@
 	req_one_access = list();
 	req_one_access_txt = "8;12;39;40;22;27"
 	},
-/obj/item/storage/box/nade_box/flare{
-	pixel_x = 1
-	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "dAO" = (
@@ -16095,6 +16092,9 @@
 	pixel_y = 10
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/box/nade_box/flare{
+	pixel_y = 6
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonarmory)
 "fbw" = (

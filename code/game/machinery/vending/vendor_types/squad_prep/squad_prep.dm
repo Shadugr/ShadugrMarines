@@ -418,18 +418,29 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad/populate_product_list(scale)
 	listed_products = list(
 		list("ARMOR-PIERCING AMMUNITION", -1, null, null),
-		list("M49A AP Magazine (10x24mm)", 3.5, /obj/item/ammo_magazine/rifle/m49a/ap, VENDOR_ITEM_REGULAR),
-		list("M39 AP Magazine (10x20mm)", floor(scale * 3), /obj/item/ammo_magazine/smg/m39/ap, VENDOR_ITEM_REGULAR),
-		list("M41A AP Magazine (10x24mm)", floor(scale * 3), /obj/item/ammo_magazine/rifle/ap, VENDOR_ITEM_REGULAR),
+		list("M49A AP Magazine (10x24mm)", floor(scale * 4), /obj/item/ammo_magazine/rifle/m49a/ap, VENDOR_ITEM_REGULAR),
+		list("M39 AP Magazine (10x20mm)", floor(scale * 4), /obj/item/ammo_magazine/smg/m39/ap, VENDOR_ITEM_REGULAR),
+		list("M41A AP Magazine (10x24mm)", floor(scale * 4), /obj/item/ammo_magazine/rifle/ap, VENDOR_ITEM_REGULAR),
 
 		list("EXTENDED AMMUNITION", -1, null, null),
-		list("M39 Extended Magazine (10x20mm)", 1.8, /obj/item/ammo_magazine/smg/m39/extended, VENDOR_ITEM_REGULAR),
-		list("M41A Extended Magazine (10x24mm)", 1.9, /obj/item/ammo_magazine/rifle/extended, VENDOR_ITEM_REGULAR),
+		list("M49A Extended Magazine (10x24mm)", floor(scale * 3), /obj/item/ammo_magazine/rifle/m49a/ext, VENDOR_ITEM_REGULAR),
+		list("M39 Extended Magazine (10x20mm)", floor(scale * 3), /obj/item/ammo_magazine/smg/m39/extended, VENDOR_ITEM_REGULAR),
+		list("M41A Extended Magazine (10x24mm)",floor(scale * 3), /obj/item/ammo_magazine/rifle/extended, VENDOR_ITEM_REGULAR),
+
+		list("INCENDIARY", -1, null, null),
+		list("M49A Incendiary Magazine (10x24mm)", floor(scale * 2), /obj/item/ammo_magazine/rifle/m49a/incendiary, VENDOR_ITEM_REGULAR),
+		list("M39 Incendiary Magazine (10x20mm)", floor(scale * 2), /obj/item/ammo_magazine/smg/m39/incendiary, VENDOR_ITEM_REGULAR),
+		list("M41A Incendiary Magazine (10x24mm)", floor(scale * 2), /obj/item/ammo_magazine/rifle/incendiary, VENDOR_ITEM_REGULAR),
+
+		list("HIGH-EXLOSIVE ARMOR-PIERCING AMMUNITION", -1, null, null),
+		list("M49A HEAP Magazine (10x24mm)", floor(scale), /obj/item/ammo_magazine/rifle/m49a/heap, VENDOR_ITEM_REGULAR),
+		list("M39 HEAP Magazine (10x20mm)", floor(scale), /obj/item/ammo_magazine/smg/m39/heap, VENDOR_ITEM_REGULAR),
+		list("M41A HEAP Magazine (10x24mm)", floor(scale), /obj/item/ammo_magazine/rifle/heap, VENDOR_ITEM_REGULAR),
 
 		list("SPECIAL AMMUNITION", -1, null, null),
-		list("M56 Smartgun Drum", 1, /obj/item/ammo_magazine/smartgun, VENDOR_ITEM_REGULAR),
-		list("M44 Heavy Speed Loader (.44)", floor(scale * 2), /obj/item/ammo_magazine/revolver/heavy, VENDOR_ITEM_REGULAR),
-		list("M44 Marksman Speed Loader (.44)", floor(scale * 2), /obj/item/ammo_magazine/revolver/marksman, VENDOR_ITEM_REGULAR),
+		list("M56 Smartgun Drum", floor(scale), /obj/item/ammo_magazine/smartgun, VENDOR_ITEM_REGULAR),
+		list("M44 Heavy Speed Loader (.44)", floor(scale * 3), /obj/item/ammo_magazine/revolver/heavy, VENDOR_ITEM_REGULAR),
+		list("M44 Marksman Speed Loader (.44)", floor(scale * 3), /obj/item/ammo_magazine/revolver/marksman, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARM AMMUNITION", -1, null, null),
 		list("VP78 Magazine", floor(scale * 5), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),
@@ -441,6 +452,9 @@
 		list("HIRR Baton Slugs", floor(scale * 6), /obj/item/explosive/grenade/slug/baton, VENDOR_ITEM_REGULAR),
 		list("M74 AGM-S Star Shell", floor(scale * 4), /obj/item/explosive/grenade/high_explosive/airburst/starshell, VENDOR_ITEM_REGULAR),
 		list("M74 AGM-S Hornet Shell", floor(scale * 4), /obj/item/explosive/grenade/high_explosive/airburst/hornet_shell, VENDOR_ITEM_REGULAR),
+		list("Incinerator tank", floor(scale * 2), /obj/item/ammo_magazine/flamer_tank, VENDOR_ITEM_REGULAR),
+		list("Incinerator tank (B-Gel)", floor(scale), /obj/item/ammo_magazine/flamer_tank/gellied, VENDOR_ITEM_REGULAR),
+		list("Incinerator tank (EX)", 1, /obj/item/ammo_magazine/flamer_tank/EX, VENDOR_ITEM_REGULAR),
 		)
 
 //--------------SQUAD ARMAMENTS VENDOR--------------

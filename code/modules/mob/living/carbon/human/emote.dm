@@ -26,28 +26,28 @@
 /datum/emote/living/carbon/human/blink
 	key = "blink"
 	key_third_person = "blinks"
-	message = "blinks."
+	message = "моргает."
 
 /datum/emote/living/carbon/human/blink_rapid
 	key = "rapidblink"
-	message = "blinks rapidly."
+	message = "быстро моргает."
 
 /datum/emote/living/carbon/human/bow
 	key = "bow"
 	key_third_person = "bows"
-	message = "bows."
-	message_param = "bows to %t."
+	message = "кланяется."
+	message_param = "кланяется перед %t."
 
 /datum/emote/living/carbon/human/chuckle
 	key = "chuckle"
 	key_third_person = "chuckles"
-	message = "chuckles."
+	message = "усмехается."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/clap
 	key = "clap"
 	key_third_person = "claps"
-	message = "claps."
+	message = "хлопает."
 	hands_use_check = TRUE
 	audio_cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -56,7 +56,7 @@
 /datum/emote/living/carbon/human/collapse
 	key = "collapse"
 	key_third_person = "collapses"
-	message = "collapses!"
+	message = "падает!"
 
 /datum/emote/living/carbon/human/collapse/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -65,26 +65,26 @@
 /datum/emote/living/carbon/human/cough
 	key = "cough"
 	key_third_person = "coughs"
-	message = "coughs!"
+	message = "кашляет!"
 
 /datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	message = "cries."
+	message = "плачет."
 
 /datum/emote/living/carbon/human/eyebrow
 	key = "eyebrow"
-	message = "raises an eyebrow."
+	message = "поднимает бровь."
 
 /datum/emote/living/carbon/human/facepalm
 	key = "facepalm"
 	key_third_person = "facepalms"
-	message = "facepalms."
+	message = "делает фейспалм."
 
 /datum/emote/living/carbon/human/faint
 	key = "faint"
 	key_third_person = "faints"
-	message = "faints!"
+	message = "теряет сознание!"
 
 /datum/emote/living/carbon/human/faint/run_emote(mob/living/carbon/human/user, params, type_override, intentional)
 	. = ..()
@@ -93,30 +93,30 @@
 /datum/emote/living/carbon/human/frown
 	key = "frown"
 	key_third_person = "frowns"
-	message = "frowns."
+	message = "хмурится."
 
 /datum/emote/living/carbon/human/gasp
 	key = "gasp"
 	key_third_person = "gasps"
-	message = "gasps!"
+	message = "задыхается!"
 
 /datum/emote/living/carbon/human/giggle
 	key = "giggle"
 	key_third_person = "giggles"
-	message = "giggles."
+	message = "хихикает."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/glare
 	key = "glare"
 	key_third_person = "glares"
-	message = "glares."
-	message_param = "glares at %t."
+	message = "сверлит взглядом."
+	message_param = "сверлит взглядом %t."
 
 /datum/emote/living/carbon/human/golfclap
 	key = "golfclap"
 	key_third_person = "golfclaps"
-	message = "claps, clearly unimpressed."
-	alt_message = "claps"
+	message = "сдержанно хлопает."
+	alt_message = "хлопает"
 	sound = 'sound/misc/golfclap.ogg'
 	cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -124,32 +124,32 @@
 /datum/emote/living/carbon/human/grin
 	key = "grin"
 	key_third_person = "grins"
-	message = "grins."
+	message = "ухмыляется."
 
 /datum/emote/living/carbon/human/grumble
 	key = "grumble"
 	key_third_person = "grumbles"
-	message = "grumbles."
+	message = "ворчит."
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
-	message_param = "shakes hands with %t."
+	message_param = "жмёт руку %t."
 
 /datum/emote/living/carbon/human/laugh
 	key = "laugh"
 	key_third_person = "laughs"
-	message = "laughs!"
+	message = "смеётся!"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/look
 	key = "look"
 	key_third_person = "looks"
-	message = "looks."
-	message_param = "looks at %t."
+	message = "смотрит."
+	message_param = "смотрит на %t."
 
 /datum/emote/living/carbon/human/medic
 	key = "medic"
-	message = "calls for a Corpsman!"
+	message = "зовёт медика!"
 	alt_message = "shouts something"
 	cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -171,28 +171,28 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/medic_message = pick("Corpsman!", "Doc!", "Help!")
+	var/medic_message = pick("Медик!", "Док!", "Помогите!")
 	user.langchat_speech(medic_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_FAST_POP, additional_styles = list("langchat_bolded"))
 
 /datum/emote/living/carbon/human/moan
 	key = "moan"
 	key_third_person = "moans"
-	message = "moans."
+	message = "стонет."
 
 /datum/emote/living/carbon/human/mumble
 	key = "mumble"
 	key_third_person = "mumbles"
-	message = "mumbles."
+	message = "бормочет."
 
 /datum/emote/living/carbon/human/nod
 	key = "nod"
 	key_third_person = "nods"
-	message = "nods."
+	message = "кивает."
 
 /datum/emote/living/carbon/human/pain
 	key = "pain"
-	message = "cries out in pain!"
-	alt_message = "cries out"
+	message = "визжит от боли!"
+	alt_message = "визжит"
 	species_type_blacklist_typecache = list(/datum/species/synthetic)
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
@@ -217,13 +217,13 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/pain_message = pick("OW!!", "AGH!!", "ARGH!!", "OUCH!!", "ACK!!", "OUF!")
+	var/pain_message = pick("АЙ!!", "ААГХ!!", "АРГХ!!", "АУЧ!!", "ААА!!", "УФ!")
 	user.langchat_speech(pain_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_FAST_POP, additional_styles = list("langchat_yell"))
 /datum/emote/living/carbon/human/salute
 	key = "salute"
 	key_third_person = "salutes"
-	message = "salutes."
-	message_param = "salutes to %t."
+	message = "салютует."
+	message_param = "салютует %t."
 	sound = 'sound/misc/salute.ogg'
 	audio_cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -231,7 +231,7 @@
 /datum/emote/living/carbon/human/scream
 	key = "scream"
 	key_third_person = "screams"
-	message = "screams!"
+	message = "кричит!"
 	audio_cooldown = 5 SECONDS
 	species_type_blacklist_typecache = list(/datum/species/synthetic)
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -256,51 +256,51 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/scream_message = pick("FUCK!!!", "AGH!!!", "ARGH!!!", "AAAA!!!", "HGH!!!", "NGHHH!!!", "NNHH!!!", "SHIT!!!")
+	var/scream_message = pick("БЛЯТЬ!!!", "АГГХ!!!", "АГХ!!!", "AAAA!!!", "ГГГХ!!!", "НГХХХ!!!", "СУКА!!!", "ДЕРЬМО!!!")
 	user.langchat_speech(scream_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_PANIC_POP, additional_styles = list("langchat_yell"))
 
 /datum/emote/living/carbon/human/shakehead
 	key = "shakehead"
-	message = "shakes their head."
+	message = "качает головой."
 
 /datum/emote/living/carbon/human/shiver
 	key = "shiver"
 	key_third_person = "shivers"
-	message = "shivers."
+	message = "дрожит."
 
 /datum/emote/living/carbon/human/shrug
 	key = "shrug"
 	key_third_person = "shrugs"
-	message = "shrugs."
+	message = "пожимает плечами."
 
 /datum/emote/living/carbon/human/sigh
 	key = "sigh"
 	key_third_person = "sighs"
-	message = "sighs."
+	message = "вздыхает."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/smile
 	key = "smile"
 	key_third_person = "smiles"
-	message = "smiles."
+	message = "улыбается."
 
 /datum/emote/living/carbon/human/sneeze
 	key = "sneeze"
 	key_third_person = "sneezes"
-	message = "sneezes!"
+	message = "чихает!"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/snore
 	key = "snore"
 	key_third_person = "snores"
-	message = "snores."
+	message = "храпит."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/stare
 	key = "stare"
 	key_third_person = "stares"
-	message = "stares."
-	message_param = "stares at %t."
+	message = "пялиться."
+	message_param = "пялиться на %t."
 
 /datum/emote/living/carbon/human/signal
 	key = "signal"
@@ -317,38 +317,38 @@
 
 /datum/emote/living/carbon/human/stop
 	key = "stop"
-	message = "holds out an open palm, gesturing to stop."
+	message = "протягивает открытую ладонь, жестом показывая, что нужно остановиться."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/thumbsup
 	key = "thumbsup"
-	message = "gives a thumbs up."
+	message = "показывает большой палец вверх."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/thumbsdown
 	key = "thumbsdown"
-	message = "gives a thumbs down."
+	message = "показывает большой палец вниз."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/twitch
 	key = "twitch"
 	key_third_person = "twitches"
-	message = "twitches."
+	message = "дёргается."
 
 /datum/emote/living/carbon/human/wave
 	key = "wave"
 	key_third_person = "waves"
-	message = "waves."
+	message = "машет рукой."
 
 /datum/emote/living/carbon/human/yawn
 	key = "yawn"
 	key_third_person = "yawns"
-	message = "yawns."
+	message = "зевает."
 
 /datum/emote/living/carbon/human/warcry
 	key = "warcry"
-	message = "shouts an inspiring cry!"
-	alt_message = "shouts something"
+	message = "выкрикивает вдохновляющий клич!"
+	alt_message = "кричит что-то."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/warcry/run_emote(mob/living/user, params, type_override, intentional)
@@ -374,11 +374,115 @@
 /datum/emote/living/carbon/human/whimper
 	key = "whimper"
 	key_third_person = "whimpers"
-	message = "whimpers."
+	message = "хнычет."
 
 /datum/emote/living/carbon/human/whimper/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
 	if(!.)
 		return
+
+	user.show_speech_bubble("scream")
+
+/datum/emote/living/carbon/human/enemynorth
+	key = "enemynorth"
+	key_third_person = "enemynorths"
+	message = "кричит, что противник на севере!!!"
+	alt_message = "кричит что-то."
+
+/datum/emote/living/carbon/human/enemynorth/get_sound(mob/living/user)
+	if(ishumansynth_strict(user))
+		if(user.gender == MALE)
+			if(user.faction == FACTION_UPP)
+				return get_sfx("male_upp_warcry")
+			else
+				return get_sfx("male_warcry")
+		else
+			if(user.faction == FACTION_UPP)
+				return get_sfx("female_upp_warcry")
+			else
+				return get_sfx("female_warcry")
+
+/datum/emote/living/carbon/human/enemynorth/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+
+	user.show_speech_bubble("scream")
+
+/datum/emote/living/carbon/human/enemysouth
+	key = "enemysouth"
+	key_third_person = "enemysouths"
+	message = "кричит, что противник на юге!!!"
+	alt_message = "кричит что-то."
+
+/datum/emote/living/carbon/human/enemysouth/get_sound(mob/living/user)
+	if(ishumansynth_strict(user))
+		if(user.gender == MALE)
+			if(user.faction == FACTION_UPP)
+				return get_sfx("male_upp_warcry")
+			else
+				return get_sfx("male_warcry")
+		else
+			if(user.faction == FACTION_UPP)
+				return get_sfx("female_upp_warcry")
+			else
+				return get_sfx("female_warcry")
+
+/datum/emote/living/carbon/human/enemysouth/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+
+	user.show_speech_bubble("scream")
+
+/datum/emote/living/carbon/human/enemywest
+	key = "enemywest"
+	key_third_person = "enemywests"
+	message = "кричит, что противник на западе!!!"
+	alt_message = "кричит что-то."
+
+/datum/emote/living/carbon/human/enemywest/get_sound(mob/living/user)
+	if(ishumansynth_strict(user))
+		if(user.gender == MALE)
+			if(user.faction == FACTION_UPP)
+				return get_sfx("male_upp_warcry")
+			else
+				return get_sfx("male_warcry")
+		else
+			if(user.faction == FACTION_UPP)
+				return get_sfx("female_upp_warcry")
+			else
+				return get_sfx("female_warcry")
+
+/datum/emote/living/carbon/human/enemywest/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+
+	user.show_speech_bubble("scream")
+
+/datum/emote/living/carbon/human/enemyeast
+	key = "enemyeast"
+	key_third_person = "enemyeast"
+	message = "кричит, что противник на востоке!!!"
+	alt_message = "кричит что-то."
+
+/datum/emote/living/carbon/human/enemyeast/get_sound(mob/living/user)
+	if(ishumansynth_strict(user))
+		if(user.gender == MALE)
+			if(user.faction == FACTION_UPP)
+				return get_sfx("male_upp_warcry")
+			else
+				return get_sfx("male_warcry")
+		else
+			if(user.faction == FACTION_UPP)
+				return get_sfx("female_upp_warcry")
+			else
+				return get_sfx("female_warcry")
+
+/datum/emote/living/carbon/human/enemyeast/run_emote(mob/living/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
 
 	user.show_speech_bubble("scream")

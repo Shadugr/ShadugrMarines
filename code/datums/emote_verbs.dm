@@ -1,38 +1,59 @@
 /**
  * Sound Emotes
  */
+
+/mob/living/carbon/human/verb/enemynorth()
+	set name = "▷ Враг север "
+	set category = "Emotes"
+	emote("enemynorth", intentional = TRUE)
+
+/mob/living/carbon/human/verb/enemyeast()
+	set name = "▷ Враг восток "
+	set category = "Emotes"
+	emote("enemyeast", intentional = TRUE)
+
+/mob/living/carbon/human/verb/enemysouth()
+	set name = "▷ Враг юг "
+	set category = "Emotes"
+	emote("enemysouth", intentional = TRUE)
+
+/mob/living/carbon/human/verb/enemywest()
+	set name = "▷ Враг запад "
+	set category = "Emotes"
+	emote("enemywest", intentional = TRUE)
+
+/mob/living/carbon/human/verb/emote_medic()
+	set name = "▷ Медик "
+	set category = "Emotes"
+	emote("medic", intentional = TRUE)
+
 /mob/living/carbon/human/verb/emote_clap()
-	set name = "▷ Clap "
+	set name = "▷ Хлопать "
 	set category = "Emotes"
 	emote("clap", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_golfclap()
-	set name = "▷ Golf clap "
+	set name = "▷ Сдержанно хлопать "
 	set category = "Emotes"
 	emote("golfclap", intentional = TRUE)
 
-/mob/living/carbon/human/verb/emote_medic()
-	set name = "▷ Medic "
-	set category = "Emotes"
-	emote("medic", intentional = TRUE)
-
 /mob/living/carbon/human/verb/emote_pain()
-	set name = "▷ Pain "
+	set name = "▷ Кричать от боли "
 	set category = "Emotes"
 	emote("pain", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_salute()
-	set name = "▷ Salute "
+	set name = "▷ Салютовать "
 	set category = "Emotes"
 	emote("salute", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_scream()
-	set name = "▷ Scream "
+	set name = "▷ Кричать "
 	set category = "Emotes"
 	emote("scream", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_warcry()
-	set name = "▷ War cry "
+	set name = "▷ Боевой клич "
 	set category = "Emotes"
 	emote("warcry", intentional = TRUE)
 
@@ -40,12 +61,12 @@
  * Action Emotes
  */
 /mob/living/carbon/human/verb/emote_collapse()
-	set name = "○ Collapse "
+	set name = "○ Упасть "
 	set category = "Emotes"
 	emote("collapse", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_faint()
-	set name = "○ Faint "
+	set name = "○ Потерять сознание "
 	set category = "Emotes"
 	emote("faint", intentional = TRUE)
 
@@ -53,176 +74,171 @@
  * Generic Emotes
  */
 /mob/living/carbon/human/verb/emote_blink()
-	set name = "◦ Blink "
+	set name = "◦ Моргать "
 	set category = "Emotes"
 	emote("blink", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_blink_rapid()
-	set name = "◦ Rapid blink "
+	set name = "◦ Быстро моргать "
 	set category = "Emotes"
 	emote("rapidblink", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_bow()
-	set name = "◦ Bow "
+	set name = "◦ Поклониться "
 	set category = "Emotes"
 	emote("bow", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_chuckle()
-	set name = "◦ Chuckle "
+	set name = "◦ Усмехнуться "
 	set category = "Emotes"
 	emote("chuckle", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_cough()
-	set name = "◦ Cough "
+	set name = "◦ Кашлять "
 	set category = "Emotes"
 	emote("cough", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_cry()
-	set name = "◦ Cry "
+	set name = "◦ Плакать "
 	set category = "Emotes"
 	emote("cry", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_eyebrow()
-	set name = "◦ Eyebrow "
+	set name = "◦ Поднять бровь "
 	set category = "Emotes"
 	emote("eyebrow", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_facepalm()
-	set name = "◦ Facepalm "
+	set name = "◦ Фейспалм "
 	set category = "Emotes"
 	emote("facepalm", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_frown()
-	set name = "◦ Frown "
+	set name = "◦ Хмурится "
 	set category = "Emotes"
 	emote("frown", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_gasp()
-	set name = "◦ Gasp "
+	set name = "◦ Задыхаться "
 	set category = "Emotes"
 	emote("gasp", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_giggle()
-	set name = "◦ Giggle "
+	set name = "◦ Хихикать "
 	set category = "Emotes"
 	emote("giggle", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_glare()
-	set name = "◦ Glare "
+	set name = "◦ Сверлить взглядом "
 	set category = "Emotes"
 	emote("glare", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_grin()
-	set name = "◦ Grin "
+	set name = "◦ Ухмыльнуться "
 	set category = "Emotes"
 	emote("grin", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_grumble()
-	set name = "◦ Grumble "
+	set name = "◦ Ворчать "
 	set category = "Emotes"
 	emote("grumble", intentional = TRUE)
 
-/mob/living/carbon/human/verb/emote_handshake()
-	set name = "◦ Handshake "
-	set category = "Emotes"
-	emote("handshake", intentional = TRUE)
-
 /mob/living/carbon/human/verb/emote_laugh()
-	set name = "◦ Laugh "
+	set name = "◦ Смеяться "
 	set category = "Emotes"
 	emote("laugh", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_look()
-	set name = "◦ Look "
+	set name = "◦ Смотреть "
 	set category = "Emotes"
 	emote("look", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_moan()
-	set name = "◦ Moan "
+	set name = "◦ Стонать "
 	set category = "Emotes"
 	emote("moan", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_mumble()
-	set name = "◦ Mumble "
+	set name = "◦ Бормотать "
 	set category = "Emotes"
 	emote("mumble", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_nod()
-	set name = "◦ Nod "
+	set name = "◦ Кивнуть "
 	set category = "Emotes"
 	emote("nod", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_shakehead()
-	set name = "◦ Shake head "
+	set name = "◦ Качать головой "
 	set category = "Emotes"
 	emote("shakehead", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_shiver()
-	set name = "◦ Shiver "
+	set name = "◦ Дрожать "
 	set category = "Emotes"
 	emote("shiver", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_shrug()
-	set name = "◦ Shrug "
+	set name = "◦ Пожать плечами "
 	set category = "Emotes"
 	emote("shrug", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_sigh()
-	set name = "◦ Sigh "
+	set name = "◦ Вздохнуть "
 	set category = "Emotes"
 	emote("sigh", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_smile()
-	set name = "◦ Smile "
+	set name = "◦ Улыбнуться "
 	set category = "Emotes"
 	emote("smile", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_sneeze()
-	set name = "◦ Sneeze "
+	set name = "◦ Чихнуть "
 	set category = "Emotes"
 	emote("sneeze", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_snore()
-	set name = "◦ Snore "
+	set name = "◦ Хропеть "
 	set category = "Emotes"
 	emote("snore", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_stare()
-	set name = "◦ Stare "
+	set name = "◦ Пялиться "
 	set category = "Emotes"
 	emote("stare", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_stop()
-	set name = "◦ Stop "
+	set name = "◦ Стоп "
 	set category = "Emotes"
 	emote("stop", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_thumbsdown()
-	set name = "◦ Thumbs down "
+	set name = "◦ Палец вниз "
 	set category = "Emotes"
 	emote("thumbsdown", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_thumbsup()
-	set name = "◦ Thumbs up "
+	set name = "◦ Палец вверх "
 	set category = "Emotes"
 	emote("thumbsup", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_twitch()
-	set name = "◦ Twitch "
+	set name = "◦ Дёргаться "
 	set category = "Emotes"
 	emote("twitch", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_wave()
-	set name = "◦ Wave "
+	set name = "◦ Махать рукой "
 	set category = "Emotes"
 	emote("wave", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_whimper()
-	set name = "◦ Whimper "
+	set name = "◦ Хныкаать "
 	set category = "Emotes"
 	emote("whimper", intentional = TRUE)
 
 /mob/living/carbon/human/verb/emote_yawn()
-	set name = "◦ Yawn "
+	set name = "◦ Зевать "
 	set category = "Emotes"
 	emote("yawn", intentional = TRUE)

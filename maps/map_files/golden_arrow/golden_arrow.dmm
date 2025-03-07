@@ -67,16 +67,14 @@
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aaj" = (
-/obj/structure/machinery/vending/coffee{
-	pixel_y = -7;
-	pixel_x = -1;
-	wrenchable = 0
+/obj/structure/machinery/chem_dispenser/soda/beer{
+	pixel_y = -10;
+	pixel_x = 3
 	},
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aak" = (
 /obj/structure/machinery/vending/cigarette/koorlander{
-	pixel_x = -7;
 	pixel_y = -7;
 	wrenchable = 0
 	},
@@ -581,37 +579,6 @@
 /area/golden_arrow/cryo_cells)
 "ace" = (
 /obj/structure/surface/table/almayer,
-/obj/item/clothing/mask/cigarette/cigar{
-	pixel_x = 9
-	},
-/obj/item/prop/helmetgarb/lucky_feather{
-	pixel_y = 7
-	},
-/obj/item/trash/candle{
-	pixel_y = 14;
-	pixel_x = 15
-	},
-/obj/item/prop/helmetgarb/rosary{
-	pixel_x = -11;
-	desc = "An old rosary, a few beads missing from it's string, yet it still holds together.";
-	name = "damaged rosary"
-	},
-/obj/item/prop{
-	name = "\improper battered M10 pattern ballistic helmet";
-	icon = 'icons/obj/items/clothing/cm_hats.dmi';
-	icon_state = "helmet";
-	desc = "A helmet once belonging to a marine aboard the Golden Arrow. It's new home is sitting right in front of the memorial, a reminder of who has been lost.";
-	pixel_y = 12
-	},
-/obj/item/prop{
-	name = "\improper worn-out headband";
-	icon = 'icons/obj/items/clothing/cm_hats.dmi';
-	icon_state = "headband";
-	desc = "A torn up and worn out old headband. The green looks faded.";
-	pixel_y = 9;
-	pixel_x = -15;
-	layer = 3.01
-	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "ach" = (
@@ -3652,15 +3619,6 @@
 /obj/structure/surface/table/almayer,
 /obj/structure/barricade/handrail{
 	dir = 4
-	},
-/obj/item/prop/flower_vase/redwhiteflowers{
-	pixel_y = 10;
-	layer = 3.03
-	},
-/obj/item/dogtag{
-	desc = "A fallen marine's information dog tag. It looks battered and the name is worn out.";
-	pixel_y = 2;
-	name = "faded information dog tag"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
@@ -7083,20 +7041,6 @@
 	layer = 2.9;
 	pixel_y = 33;
 	pixel_x = 16
-	},
-/obj/item/reagent_container/food/snacks/grown/poppy{
-	pixel_x = 4;
-	pixel_y = 6;
-	layer = 3.03
-	},
-/obj/item/tool/candle{
-	pixel_y = 13;
-	pixel_x = -6;
-	layer = 3.03
-	},
-/obj/item/ashtray/plastic{
-	pixel_y = 8;
-	pixel_x = -7
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
@@ -16930,13 +16874,9 @@
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/hangar)
 "hSS" = (
-/obj/structure/machinery/cm_vending/gear/tl{
-	req_access = list();
-	req_one_access_txt = "8;12;39;40;22;27";
-	vendor_role = list()
-	},
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/hangar)
+/obj/structure/largecrate/supply/explosives/mortar_flare,
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/supply)
 "hSW" = (
 /obj/effect/landmark/start/marine/leader/alpha,
 /obj/effect/landmark/late_join/alpha,
@@ -31440,7 +31380,7 @@ aEG
 vYW
 cqk
 vve
-aDj
+hSS
 afz
 aAu
 aPB
@@ -32002,7 +31942,7 @@ aTD
 adz
 adz
 adz
-hSS
+adz
 akb
 akb
 akb

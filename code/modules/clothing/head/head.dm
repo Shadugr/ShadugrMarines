@@ -262,8 +262,8 @@
 						/obj/item/prop/helmetgarb/lucky_feather/yellow = "lucky_feather_yellow",
 						/obj/item/tool/pen/fountain = "fountainpen",
 						)
-	var/storage_slots = 1
-	var/storage_slots_reserved_for_garb = 1
+	var/storage_slots = 2
+	var/storage_slots_reserved_for_garb = 2
 	var/storage_max_w_class = SIZE_TINY
 	var/storage_max_storage_space = 4
 	item_icons = list(

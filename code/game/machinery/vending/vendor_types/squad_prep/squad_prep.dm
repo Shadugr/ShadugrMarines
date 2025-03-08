@@ -455,6 +455,10 @@
 		list("Incinerator tank", floor(scale * 2), /obj/item/ammo_magazine/flamer_tank, VENDOR_ITEM_REGULAR),
 		list("Incinerator tank (B-Gel)", floor(scale), /obj/item/ammo_magazine/flamer_tank/gellied, VENDOR_ITEM_REGULAR),
 		list("Incinerator tank (EX)", 1, /obj/item/ammo_magazine/flamer_tank/EX, VENDOR_ITEM_REGULAR),
+		list("Nailgun magazine (7x45mm)", floor(scale * 3), /obj/item/ammo_magazine/smg/nailgun),
+		list("M41AE2 ammo box (10x24mm)", 2, /obj/item/ammo_magazine/hpr_box),
+		list("M41AE2 ammo box (10x24mm holo-target)", 1, /obj/item/ammo_magazine/hpr_box/holo_target),
+		list("M41AE2 AP ammo box (10x24mm)", 1, /obj/item/ammo_magazine/hpr_box/ap),
 		)
 
 //--------------SQUAD ARMAMENTS VENDOR--------------

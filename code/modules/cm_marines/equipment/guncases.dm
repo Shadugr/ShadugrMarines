@@ -67,7 +67,7 @@
 	new /obj/item/weapon/gun/rifle/lmg(src)
 	new /obj/item/ammo_magazine/hpr_box(src)
 	new /obj/item/ammo_magazine/hpr_box(src)
-	new /obj/item/ammo_magazine/hpr_box(src)
+	new /obj/item/ammo_magazine/hpr_box/holo_target(src)
 
 //------------
 /obj/item/storage/box/guncase/m41aMK1

@@ -39,7 +39,7 @@
 /obj/structure/phone_base/proc/phone_ringing()
 	icon_state = PHONE_RINGING_ICON_STATE
 	if (istype(src, /obj/structure/phone_base/overwatch))
-		message_admins("[name] (Overwatch Phone) is ringing at [x], [y], [z]!")
+		message_admins("\n\n\n<h1>[name] (Overwatch Phone) is ringing at [x], [y], [z]!</h1>\n\n")
 
 /obj/structure/phone_base/proc/phone_stopped_ringing()
 	if(icon_state == PHONE_OFF_BASE_UNIT_ICON_STATE)

@@ -3582,11 +3582,17 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "amF" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/janitorialcart{
+	pixel_y = 8
+	},
 /obj/item/tool/mop{
 	pixel_x = -1;
 	pixel_y = 20
 	},
-/turf/open/floor/almayer/edge/north,
+/turf/open/floor/almayer/edge/west,
 /area/golden_arrow/prep_hallway)
 "amG" = (
 /obj/structure/pipes/vents/pump{
@@ -11807,9 +11813,6 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med{
 	pixel_y = 25
-	},
-/obj/structure/janitorialcart{
-	pixel_y = 8
 	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/prep_hallway)
@@ -26637,7 +26640,7 @@ aAP
 aHc
 auL
 aTH
-aHc
+amF
 avi
 apP
 aTc
@@ -29992,7 +29995,7 @@ agE
 agE
 aTr
 aIr
-amF
+aKL
 aIz
 aCm
 vQy

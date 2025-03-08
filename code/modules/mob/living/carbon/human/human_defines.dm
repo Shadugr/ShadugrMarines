@@ -277,3 +277,5 @@
 		to_chat(usr, "Removed [rem_organ] from [src].")
 		qdel(rem_organ)
 
+/mob/living/carbon/human/nondeath
+	revive_grace_period = 8640 MINUTES

@@ -80,6 +80,7 @@ GLOBAL_LIST_INIT(admin_verbs_default, list(
 	/client/proc/open_human_faction_management_panel,
 	/client/proc/open_human_defense_creator_panel,
 	/client/proc/create_human_ai,
+	/client/proc/create_human_ai_nondeath,
 	/client/proc/fortify_room,
 	/client/proc/make_human_ai,
 	/datum/admins/proc/create_human_ai_sniper,

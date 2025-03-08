@@ -442,9 +442,10 @@
 
 /obj/item/clothing/accessory/health/research_plate/anti_decay/proc/onetime_use()
 	SIGNAL_HANDLER
-	UnregisterSignal(wearer, COMSIG_HUMAN_REVIVED)
-	to_chat(wearer, SPAN_NOTICE("[icon2html(src, viewers(src))] \The <b>[src]</b> beeps: Chemical preservatives reserves depleted, replace the [src]"))
-	wearer.revive_grace_period = 5 MINUTES
+	if(!istype(wearer, /mob/living/carbon/human/nondeath))
+		UnregisterSignal(wearer, COMSIG_HUMAN_REVIVED)
+		to_chat(wearer, SPAN_NOTICE("[icon2html(src, viewers(src))] \The <b>[src]</b> beeps: Chemical preservatives reserves depleted, replace the [src]"))
+		wearer.revive_grace_period = 5 MINUTES
 
 
 

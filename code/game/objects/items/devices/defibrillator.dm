@@ -140,7 +140,7 @@
 		user.visible_message(SPAN_WARNING("[icon2html(src, viewers(src))] \The [src] buzzes: Paddles registering >100,000 ohms, Possible cause: Suit or Armor interfering."))
 		return
 
-	if((!H.check_tod() && !issynth(H))) //synthetic species have no expiration date
+	if((!H.check_tod() && !issynth(H) && !istype(H, /mob/living/carbon/human/nondeath))) //synthetic species have no expiration date
 		user.visible_message(SPAN_WARNING("[icon2html(src, viewers(src))] \The [src] buzzes: Patient is braindead."))
 		return
 

@@ -175,6 +175,28 @@
 	ai_human.forceMove(get_turf(mob))
 	ai_human.get_ai_brain().appraise_inventory(armor = TRUE)
 
+/client/proc/create_human_ai_nondeath()
+	set name = "Create Nondeath Human AI - Expanded"
+	set category = "Game Master.HumanAI"
+
+	if(!check_rights(R_DEBUG))
+		return
+
+	if(!SSticker.mode)
+		to_chat(src, SPAN_WARNING("The round hasn't started yet!"))
+		return
+
+	var/mob/living/carbon/human/nondeath/ai_human = new()
+	ai_human.AddComponent(/datum/component/human_ai)
+
+	if(!cmd_admin_dress_human(ai_human, randomize = TRUE))
+		qdel(ai_human)
+		return
+
+	ai_human.face_dir(mob.dir)
+	ai_human.forceMove(get_turf(mob))
+	ai_human.get_ai_brain().appraise_inventory(armor = TRUE)
+
 /client/proc/make_human_ai(mob/living/carbon/human/mob in GLOB.human_mob_list)
 	set name = "Make AI"
 	set desc = "Add AI functionality to a human."

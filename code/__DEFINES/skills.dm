@@ -39,7 +39,7 @@
 
 //spec_weapons skill
 //hidden. who can and can't use specialist weapons
-#define SKILL_SPEC_DEFAULT 7
+#define SKILL_SPEC_DEFAULT 9
 /// No training in spec equipment
 #define SKILL_SPEC_UNTRAINED 0
 /// Is trained to use specialist gear, but hasn't picked a kit.

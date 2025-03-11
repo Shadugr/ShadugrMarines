@@ -59,10 +59,8 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
 "aai" = (
-/obj/structure/machinery/vending/snack/packaged{
-	pixel_y = -6;
-	wrenchable = 0;
-	pixel_x = 5
+/obj/structure/machinery/chem_dispenser/soda{
+	pixel_y = -11
 	},
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
@@ -7387,7 +7385,7 @@
 	pixel_x = 1
 	},
 /obj/structure/sign/safety/coffee{
-	pixel_x = 13;
+	pixel_x = -3;
 	pixel_y = 29
 	},
 /turf/open/floor/almayer/plate,
@@ -9312,7 +9310,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/vehicle_spawner/tank{
+/obj/effect/vehicle_spawner/tank/plain{
 	dir = 4
 	},
 /turf/open/floor/almayer/mono,
@@ -9473,7 +9471,7 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aGm" = (
-/obj/effect/vehicle_spawner/arc{
+/obj/effect/vehicle_spawner/apc_med/plain{
 	dir = 4
 	},
 /turf/open/floor/almayer/mono,
@@ -16200,7 +16198,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/vehicle_spawner/apc{
+/obj/effect/vehicle_spawner/arc/fixed{
 	dir = 4
 	},
 /turf/open/floor/almayer/mono,
@@ -19593,6 +19591,14 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/supply)
+"rpt" = (
+/obj/structure/machinery/vending/snack/packaged{
+	pixel_y = -6;
+	wrenchable = 0;
+	pixel_x = 5
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/cryo_cells)
 "rqE" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -20895,9 +20901,13 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/engineering)
 "wMB" = (
-/obj/structure/machinery/cm_vending/gear/vehicle_crew/arc_preset{
-	pixel_y = 0
-	},
+/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+/obj/item/ammo_magazine/hardpoint/flare_launcher,
+/obj/item/ammo_magazine/hardpoint/flare_launcher,
+/obj/item/ammo_magazine/hardpoint/flare_launcher,
+/obj/item/ammo_magazine/hardpoint/flare_launcher,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
 "wMR" = (
@@ -28748,7 +28758,7 @@ aEG
 aWh
 aWh
 aWh
-aWh
+rpt
 azB
 aYn
 apy
@@ -34522,11 +34532,11 @@ ejo
 oZQ
 aBO
 aCf
-bPX
+wMB
 aPq
 aBO
 aCf
-wMB
+bPX
 aPq
 awp
 aBG

@@ -14,7 +14,7 @@
 	caliber = "9mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
 	icon_state = "m39"
-	max_rounds = 48
+	max_rounds = 60
 	w_class = SIZE_MEDIUM
 	gun_type = /obj/item/weapon/gun/smg/m39
 	default_ammo = /datum/ammo/bullet/pistol
@@ -66,7 +66,7 @@
 /obj/item/ammo_magazine/smg/m39/extended
 	name = "\improper Viper 9 extended magazine (9mm)"
 	desc = "A 9mm extended submachinegun magazine."
-	max_rounds = 72
+	max_rounds = 90
 	icon_state = "m39_HV_extended"
 	bonus_overlay = "m39_ex"
 

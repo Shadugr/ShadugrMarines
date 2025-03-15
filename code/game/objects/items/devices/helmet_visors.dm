@@ -197,7 +197,7 @@
 	var/obj/item/cell/high/power_cell
 
 	/// About 5 minutes active use charge (hypothetically)
-	var/power_use = 33
+	var/power_use = 0
 
 	/// The alpha of darkness we set to for the mob while the visor is on, not completely fullbright but see-able
 	var/lighting_alpha = 100

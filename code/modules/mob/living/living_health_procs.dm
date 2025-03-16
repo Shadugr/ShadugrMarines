@@ -467,12 +467,12 @@
 		on_deafness_gain()
 
 /mob/living/proc/on_deafness_gain()
-	to_chat(src, SPAN_WARNING("You notice you can't hear anything... you're deaf!"))
+	to_chat(src, SPAN_WARNING("Вы заметили, что ничего не слышите... Вы оглохли!"))
 	// We should apply deafness here instead of in handle_regular_status_updates
 	SEND_SIGNAL(src, COMSIG_MOB_DEAFENED)
 
 /mob/living/proc/on_deafness_loss()
-	to_chat(src, SPAN_WARNING("You start hearing things again!"))
+	to_chat(src, SPAN_WARNING("Вы снова начинаете слышать!"))
 	SEND_SIGNAL(src, COMSIG_MOB_REGAINED_HEARING)
 	// Consider moving this to a signal on soundOutput. This is a fallback as handle_regular_status_updates SHOULD do the job.
 	if(!ear_deaf && (client?.soundOutput?.status_flags & EAR_DEAF_MUTE))

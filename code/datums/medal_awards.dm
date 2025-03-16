@@ -282,10 +282,6 @@ GLOBAL_LIST_INIT(human_medals, list(MARINE_CONDUCT_MEDAL))
 		to_chat(user, SPAN_WARNING("Medals only available for USCM personnel."))
 		return
 
-	if(length(GLOB.medal_awards))
-		to_chat(user, SPAN_WARNING("Only one medal may be awarded per operation."))
-		return
-
 	GLOB.ic_medals_panel.user_locs[WEAKREF(user)] = WEAKREF(printer)
 	GLOB.ic_medals_panel.tgui_interact(user)
 

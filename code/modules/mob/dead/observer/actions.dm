@@ -107,6 +107,15 @@
 	if(SSticker.mode.check_xeno_late_join(owner))
 		SSticker.mode.attempt_to_join_as_lesser_drone(owner)
 
+/datum/action/observer_action/toggle_zoom
+	name = "Toggle Zoom"
+	action_icon_state = "far_sight"
+
+/datum/action/observer_action/toggle_zoom/action_activate()
+	. = ..()
+	var/mob/dead/observer/activator = owner
+	activator.toggle_zoom()
+
 /datum/keybinding/observer
 	category = CATEGORY_OBSERVER
 	weight = WEIGHT_DEAD

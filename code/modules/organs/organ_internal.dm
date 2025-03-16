@@ -78,7 +78,7 @@
 
 	var/obj/limb/parent = owner.get_limb(parent_limb)
 	if(!silent)
-		owner.custom_pain("Something inside your [parent.display_name] hurts a lot.", 1)
+		owner.custom_pain("У тебя в [parent.display_name] что-то сильно болит внутри.", 1)
 	set_organ_status()
 
 /datum/internal_organ/proc/heal_damage(amount)
@@ -152,10 +152,10 @@
 		return
 	if(organ_status >= ORGAN_BRUISED)
 		if(prob(2))
-			spawn owner.emote("me", 1, "coughs up blood!")
+			spawn owner.emote("me", 1, "кашляет кровью!")
 			owner.drip(10)
 		if(prob(4))
-			spawn owner.emote("me", 1, "gasps for air!")
+			spawn owner.emote("me", 1, "хватает ртом воздух!")
 			owner.losebreath += 15
 
 /datum/internal_organ/lungs/rejuvenate()

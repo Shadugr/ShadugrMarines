@@ -126,7 +126,7 @@ export const HealthScan = (props) => {
             <LabeledList.Item label="Урон">
               <Box inline>
                 <ProgressBar>
-                  Brute:{' '}
+                  Ушибы:{' '}
                   <Box inline bold color={'red'}>
                     {total_brute}
                   </Box>
@@ -135,7 +135,7 @@ export const HealthScan = (props) => {
               <Box inline width={'5px'} />
               <Box inline>
                 <ProgressBar>
-                  Burn:{' '}
+                  Ожёги:{' '}
                   <Box inline bold color={'#ffb833'}>
                     {total_burn}
                   </Box>
@@ -144,7 +144,7 @@ export const HealthScan = (props) => {
               <Box inline width={'5px'} />
               <Box inline>
                 <ProgressBar>
-                  Toxin:{' '}
+                  Токсины:{' '}
                   <Box inline bold color={'green'}>
                     {toxin}
                   </Box>
@@ -153,7 +153,7 @@ export const HealthScan = (props) => {
               <Box inline width={'5px'} />
               <Box inline>
                 <ProgressBar>
-                  Oxygen:{' '}
+                  Кислород:{' '}
                   <Box inline bold color={'blue'}>
                     {oxy}
                   </Box>
@@ -163,7 +163,7 @@ export const HealthScan = (props) => {
               {!!clone && (
                 <Box inline>
                   <ProgressBar>
-                    Clone:{' '}
+                    Клон:{' '}
                     <Box inline color={'teal'}>
                       {clone}
                     </Box>
@@ -181,7 +181,7 @@ export const HealthScan = (props) => {
                 style={{ marginLeft: '2%' }}
                 onClick={() => act('change_holo_card')}
               >
-                Change
+                Изменить
               </Button>
             </LabeledList.Item>
           </LabeledList>
@@ -198,7 +198,7 @@ export const HealthScan = (props) => {
                   label={disease.name[0].toUpperCase() + disease.name.slice(1)}
                 >
                   <Box inline bold={1}>
-                    Type : {disease.type}, possible cure : {disease.cure}
+                    Тип : {disease.type}, возможное лечение: {disease.cure}
                   </Box>
                   <Box inline width={'5px'} />
                   <Box inline>
@@ -211,7 +211,7 @@ export const HealthScan = (props) => {
                         bad: [50, Infinity],
                       }}
                     >
-                      Stage:{disease.stage}/{disease.max_stage}
+                      Стадия:{disease.stage}/{disease.max_stage}
                     </ProgressBar>
                   </Box>
                 </LabeledList.Item>

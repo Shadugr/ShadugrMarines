@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	allow_additional = TRUE
 	scaled = FALSE
-	flags_startup_parameters = ROLE_ADD_TO_DEFAULT
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
 	gear_preset = /datum/equipment_preset/uscm_ship/gp
 	gear_preset_secondary = /datum/equipment_preset/uscm_ship/gp/lesser_rank
 	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>Your job is to fly, protect, and maintain the ship's gunship.</a> While you are an officer, your authority is limited to the dropship, where you have authority over the enlisted personnel."

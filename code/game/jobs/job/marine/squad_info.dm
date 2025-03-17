@@ -176,6 +176,10 @@
 					rank = "SctSgt"
 				if(JOB_SQUAD_RTO)
 					rank = "RTO"
+				if(JOB_TANK_CREW)
+					rank = "CRMN"
+				if(JOB_CAS_PILOT)
+					rank = "GP"
 				else
 					rank = ""
 			squad_info_data["fireteams"][team]["sqldr"] += list("rank" = rank)
@@ -255,6 +259,10 @@
 						rank = "SctSgt"
 					if(JOB_SQUAD_RTO)
 						rank = "RTO"
+					if(JOB_TANK_CREW)
+						rank = "CRMN"
+					if(JOB_CAS_PILOT)
+						rank = "GP"
 					else
 						rank = ""
 				if(H.rank_fallback)
@@ -304,6 +312,10 @@
 						rank = "SctSgt"
 					if(JOB_SQUAD_RTO)
 						rank = "RTO"
+					if(JOB_TANK_CREW)
+						rank = "CRMN"
+					if(JOB_CAS_PILOT)
+						rank = "GP"
 					else
 						rank = ""
 				mar[H.real_name] += list("rank" = rank)

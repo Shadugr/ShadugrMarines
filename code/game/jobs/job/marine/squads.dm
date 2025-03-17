@@ -582,6 +582,10 @@
 				num_leaders++
 		if(JOB_SQUAD_RTO)
 			assignment = JOB_SQUAD_RTO
+		if(JOB_TANK_CREW)
+			assignment = JOB_TANK_CREW
+		if(JOB_CAS_PILOT)
+			assignment = JOB_CAS_PILOT
 
 		if(JOB_MARINE_RAIDER)
 			assignment = JOB_MARINE_RAIDER

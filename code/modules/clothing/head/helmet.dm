@@ -846,7 +846,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/head/helmet/marine/leader
-	name = "\improper M09 pattern helmet"
+	name = "\improper M11 pattern helmet"
 	desc = "Back issue model of an older combat helmet. Uncomfortable, but the added protection is supposedly worth it. It's been wired up the same, so it still ties into the sensor matrix fine."
 	icon_state = "sl_helmet"
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH

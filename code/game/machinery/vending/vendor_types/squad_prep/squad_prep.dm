@@ -110,27 +110,29 @@
 		list("Patrol Cap, Jungle BDU", floor(scale * 15), /obj/item/clothing/head/cmcap, VENDOR_ITEM_REGULAR),
 		list("Boonie Hat, Jungle BDU", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
 
-		list("WEBBINGS", -1, null, null),
-		list("M3 Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/mag, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/shotgun, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m3/m40, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/small, VENDOR_ITEM_REGULAR),
-		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
-		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
-		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
-
 		list("ARMOR", -1, null, null),
 		list("Standard M3 Pattern Armor Set", round(scale * 15), /obj/item/storage/box/guncase/m3armor, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Marine Armor", round(scale * 10), /obj/item/clothing/suit/marine, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Ridged Marine Armor", round(scale * 10), /obj/item/clothing/suit/marine/lines, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Smooth Marine Armor", round(scale * 10), /obj/item/clothing/suit/marine/smooth, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Neck Guard", round(scale * 15), /obj/item/clothing/accessory/pads/neckguard, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Shoulder Pads", round(scale * 10), /obj/item/clothing/accessory/pads, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/bracers, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Groin Plate", round(scale * 10), /obj/item/clothing/accessory/pads/groin, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Shin Guards", round(scale * 15), /obj/item/clothing/accessory/pads/greaves, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Knee Guards", round(scale * 15), /obj/item/clothing/accessory/pads/kneepads, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/bracers, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Neck Guard", round(scale * 15), /obj/item/clothing/accessory/pads/neckguard, VENDOR_ITEM_REGULAR),
+
+		list("WEBBINGS FOR ARMOR", -1, null, null),
+		list("M3 Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/mag, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/shotgun, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m3/m40, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m3/small, VENDOR_ITEM_REGULAR),
+
+		list("ACCESSORIES FOR CLOTHING", -1, null, null),
+		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK", -1, null, null, null),
 		list("Lightweight IMP Backpack", floor(scale * 15), /obj/item/storage/backpack/marine, VENDOR_ITEM_REGULAR),
@@ -191,12 +193,20 @@
 /obj/item/storage/box/guncase/m3armor //forgive me, father
 	name = "\improper M3 Pattern Armor case"
 	desc = "A case containing the standard issue parts of the M3 Pattern Armor set of the USCMC. No parts sold separately."
-	can_hold = list(/obj/item/clothing/suit/marine, /obj/item/clothing/accessory/pads/groin, /obj/item/clothing/accessory/pads, /obj/item/clothing/accessory/pads/greaves)
-	storage_slots = 5
+	can_hold = list(/obj/item/clothing/suit/marine,
+	/obj/item/clothing/accessory/pads/neckguard,
+	/obj/item/clothing/accessory/pads,
+	/obj/item/clothing/accessory/pads/bracers,
+	/obj/item/clothing/accessory/pads/groin,
+	/obj/item/clothing/accessory/pads/greaves,
+	/obj/item/clothing/accessory/pads/kneepads)
+	storage_slots = 7
 
 /obj/item/storage/box/guncase/m3armor/fill_preset_inventory()
 	new /obj/item/clothing/suit/marine(src)
+	new /obj/item/clothing/accessory/pads/neckguard(src)
 	new /obj/item/clothing/accessory/pads(src)
+	new /obj/item/clothing/accessory/pads/bracers(src)
 	new /obj/item/clothing/accessory/pads/groin(src)
 	new /obj/item/clothing/accessory/pads/greaves(src)
 	new /obj/item/clothing/accessory/pads/kneepads(src)

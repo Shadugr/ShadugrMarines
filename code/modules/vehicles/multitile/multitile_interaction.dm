@@ -379,11 +379,14 @@
 	switch(seat)
 		if(VEHICLE_DRIVER)
 			if(modifiers[LEFT_CLICK] && modifiers[CTRL_CLICK])
-				activate_horn()
+				cycle_hardpoint()
 				return
 		if(VEHICLE_GUNNER)
 			if(modifiers[LEFT_CLICK] && modifiers[ALT_CLICK])
 				toggle_gyrostabilizer()
+				return
+			if(modifiers[LEFT_CLICK] && modifiers[CTRL_CLICK])
+				cycle_hardpoint()
 				return
 
 	var/obj/item/hardpoint/hardpoint = get_mob_hp(source)

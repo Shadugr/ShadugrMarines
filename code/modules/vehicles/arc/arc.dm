@@ -92,7 +92,7 @@
 	switch(get_mob_seat(source))
 		if(VEHICLE_DRIVER)
 			if(modifiers[LEFT_CLICK] && modifiers[CTRL_CLICK])
-				activate_horn()
+				cycle_hardpoint()
 
 /obj/vehicle/multitile/arc/get_examine_text(mob/user)
 	. = ..()

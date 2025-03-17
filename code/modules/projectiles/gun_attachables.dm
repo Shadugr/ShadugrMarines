@@ -2100,7 +2100,7 @@ Defined in conflicts.dm of the #defines folder.
 	stock_activated = FALSE
 	wield_delay_mod = WIELD_DELAY_NONE //starts collapsed so no delay mod
 	collapse_delay = 0.5 SECONDS
-	flags_attach_features = ATTACH_ACTIVATION
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 	attachment_action_type = /datum/action/item_action/toggle
 
 /obj/item/attachable/stock/rifle/collapsible/New()

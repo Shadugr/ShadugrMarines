@@ -474,7 +474,7 @@
 		list("Box of Breaching Shells (16g)", floor(scale * 2), /obj/item/ammo_magazine/shotgun/light/breaching, VENDOR_ITEM_REGULAR),
 		list("Box of Special Buckshots Shells (12g)", floor(scale), /obj/item/ammo_magazine/shotgun/buckshot/special, VENDOR_ITEM_REGULAR),
 		list("Box of Incendiary Slugs (12g)", floor(scale), /obj/item/ammo_magazine/shotgun/incendiary, VENDOR_ITEM_REGULAR),
-		list("Box of Incendiary Buckshots (12g)", floor(scale), /datum/ammo/bullet/shotgun/buckshot/incendiary, VENDOR_ITEM_REGULAR),
+		list("Box of Incendiary Buckshots (12g)", floor(scale), /obj/item/ammo_magazine/shotgun/incendiarybuck, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARM AMMUNITION", -1, null, null),
 		list("VP78 Magazine", floor(scale * 5), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),

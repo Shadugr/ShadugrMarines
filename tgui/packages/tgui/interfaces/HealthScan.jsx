@@ -245,7 +245,7 @@ export const HealthScan = (props) => {
           ) : null}
           {implants && detail_level !== 1 ? (
             <NoticeBox danger>
-              {implants} чужеродны{implants > 1 ? 'х' : 'й'}
+              {implants} чужеродны{implants > 1 ? 'х ' : 'й '}
               объект{implants > 1 ? 'а' : ''}!
               {healthanalyser
                 ? ' Для обнаружения требуется продвинутый сканер.'
@@ -255,7 +255,7 @@ export const HealthScan = (props) => {
           {(implants || hugged) && detail_level === 1 ? (
             <NoticeBox danger>
               {implants + (hugged ? 1 : 0)} чужеродны
-              {implants + (hugged ? 1 : 0) > 1 ? 'х' : 'й'} объект
+              {implants + (hugged ? 1 : 0) > 1 ? 'х ' : 'й '} объект
               {implants + (hugged ? 1 : 0) > 1 ? 'а' : ''}!
             </NoticeBox>
           ) : null}
@@ -477,7 +477,7 @@ const ScannerOrgans = (props) => {
               color={organ.status === 'Ушиб' ? 'orange' : 'red'}
               bold={1}
             >
-              {organ.status + ' [' + organ.damage + ' урон(а)]'}
+              {organ.status + ' [' + organ.damage + ' урон(а)] '}
             </Box>
             <Box inline width={'5px'} />
             {organ.robotic ? (

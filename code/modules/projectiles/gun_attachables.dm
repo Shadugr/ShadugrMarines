@@ -2660,6 +2660,7 @@ Defined in conflicts.dm of the #defines folder.
 		recoil_mod = RECOIL_AMOUNT_TIER_2 //Hurts pretty bad if it's wielded.
 		accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_4
 		recoil_unwielded_mod = -RECOIL_AMOUNT_TIER_4
+		scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_8
 		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_4 //Does well if it isn't.
 		hud_offset_mod = 5
 		icon_state = "smg_brace_on"
@@ -2671,6 +2672,7 @@ Defined in conflicts.dm of the #defines folder.
 		recoil_mod = 0
 		accuracy_unwielded_mod = 0
 		recoil_unwielded_mod = 0
+		scatter_unwielded_mod = 0
 		movement_onehanded_acc_penalty_mod = 0 //Does pretty much nothing if it's not activated.
 		hud_offset_mod = 4
 		icon_state = "smg_brace"

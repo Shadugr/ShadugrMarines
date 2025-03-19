@@ -218,6 +218,8 @@ GLOBAL_LIST_EMPTY(command_apc_list)
 	handle_direction(APC)
 	APC.update_icon()
 
+	return APC
+
 //PRESET: FPWs, wheels installed
 /obj/effect/vehicle_spawner/apc/plain/load_hardpoints(obj/vehicle/multitile/apc/V)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/apc_wheels)

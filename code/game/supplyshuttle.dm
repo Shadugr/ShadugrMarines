@@ -1360,7 +1360,15 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 
 /datum/vehicle_order/tank/plain
 	name = "M34A2 Longstreet Light Tank"
-	ordered_vehicle = /obj/effect/vehicle_spawner/tank
+	ordered_vehicle = /obj/effect/vehicle_spawner/tank/plain
+
+/datum/vehicle_order/apc_med/plain
+	name = "M577-MED Armored Personnel Carrier"
+	ordered_vehicle = /obj/effect/vehicle_spawner/apc_med/plain
+
+/datum/vehicle_order/arcc/fixed
+	name = "M540-B Armored Recon Carrier"
+	ordered_vehicle = /obj/effect/vehicle_spawner/arc/fixed
 
 /datum/vehicle_order/apc
 	name = "M577 Armored Personnel Carrier"
@@ -1389,7 +1397,9 @@ GLOBAL_DATUM_INIT(supply_controller, /datum/controller/supply, new())
 	. = ..()
 
 	vehicles = list(
-		new /datum/vehicle_order/tank/plain
+		new /datum/vehicle_order/tank/plain,
+		new /datum/vehicle_order/apc_med/plain,
+		new /datum/vehicle_order/arcc/fixed,
 	)
 
 	if(!GLOB.VehicleElevatorConsole)

@@ -140,6 +140,8 @@
 	handle_direction(APC)
 	APC.update_icon()
 
+	return APC
+
 //PRESET: only wheels installed
 /obj/effect/vehicle_spawner/apc_movie/plain/load_hardpoints(obj/vehicle/multitile/apc/movie/V)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/apc_wheels)

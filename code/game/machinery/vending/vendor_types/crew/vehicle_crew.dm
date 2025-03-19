@@ -56,10 +56,20 @@
 	UnregisterSignal(SSdcs, COMSIG_GLOB_VEHICLE_ORDERED)
 
 	if(!selected_vehicle)
-		selected_vehicle = "TANK" // The whole thing seems to be based upon the assumption you unlock tank as an override, defaulting to APC
+		if(istype(V, /obj/effect/vehicle_spawner/tank/plain))
+			selected_vehicle = "TANK"
+		else if(istype(V, /obj/effect/vehicle_spawner/arc/fixed))
+			selected_vehicle = "ARC"
+		else if(istype(V, /obj/effect/vehicle_spawner/apc_med/plain))
+			selected_vehicle = "APCM"
+
 	if(selected_vehicle == "TANK")
 		available_categories &= ~(VEHICLE_INTEGRAL_AVAILABLE) //APC lacks these, so we need to remove these flags to be able to access spare parts section
 		marine_announcement("A tank is being sent up to reinforce this operation.")
+	else if(selected_vehicle == "APCM")
+		marine_announcement("An APC-M is being sent up to reinforce this operation.")
+	else if(selected_vehicle == "ARC")
+		marine_announcement("An ARC is being sent up to reinforce this operation.")
 
 /obj/structure/machinery/cm_vending/gear/vehicle_crew/get_listed_products(mob/user)
 	var/list/display_list = list()
@@ -76,7 +86,7 @@
 	else if(selected_vehicle == "ARC")
 		display_list = GLOB.cm_vending_vehicle_crew_arc
 
-	else if(selected_vehicle == "APC")
+	else if(selected_vehicle == "APCM")
 		if(available_categories)
 			display_list = GLOB.cm_vending_vehicle_crew_apc
 		else //APC stuff costs more to prevent 4000 points spent on shitton of ammunition
@@ -124,15 +134,6 @@
 	var/turf/T = get_turf(src)
 	T = get_step(T, SOUTH)
 	return T
-
-/obj/structure/machinery/cm_vending/gear/vehicle_crew/tank_preset
-	selected_vehicle = "TANK"
-
-/obj/structure/machinery/cm_vending/gear/vehicle_crew/arc_preset
-	selected_vehicle = "ARC"
-
-/obj/structure/machinery/cm_vending/gear/vehicle_crew/apc_preset
-	selected_vehicle = "APC"
 
 GLOBAL_LIST_INIT(cm_vending_vehicle_crew_tank, list(
 	list("STARTING KIT SELECTION:", 0, null, null, null),
@@ -204,7 +205,8 @@ GLOBAL_LIST_INIT(cm_vending_vehicle_crew_apc_spare, list(
 GLOBAL_LIST_INIT(cm_vending_vehicle_crew_arc, list(
 	list("STARTING KIT SELECTION:", 0, null, null, null),
 
-	list("WHEELS", 0, null, null, null),
+	list("ARC:", 0, null, null, null),
+	list("ARC Ammo", 0, /obj/effect/essentials_set/arc/ammo, VEHICLE_PRIMARY_AVAILABLE, VENDOR_ITEM_MANDATORY),
 	list("Replacement ARC Wheels", 0, /obj/item/hardpoint/locomotion/arc_wheels, VEHICLE_TREADS_AVAILABLE, VENDOR_ITEM_MANDATORY)))
 
 //------------WEAPONS RACK---------------
@@ -479,6 +481,20 @@ GLOBAL_LIST_INIT(cm_vending_clothing_vehicle_crew, list(
 	spawned_gear_list = list(
 		/obj/item/hardpoint/support/flare_launcher,
 		/obj/item/ammo_magazine/hardpoint/flare_launcher,
+		/obj/item/ammo_magazine/hardpoint/flare_launcher,
+		/obj/item/ammo_magazine/hardpoint/flare_launcher,
+	)
+
+/obj/effect/essentials_set/arc/ammo
+	spawned_gear_list = list(
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
+		/obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon,
 		/obj/item/ammo_magazine/hardpoint/flare_launcher,
 		/obj/item/ammo_magazine/hardpoint/flare_launcher,
 	)

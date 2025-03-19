@@ -56,8 +56,9 @@
 
 /datum/character_trait/skills/engi
 	trait_name = "Complete Engineering Training"
-	trait_desc = "Boosts the engineering skill to 3. Crewmember received basic training in repairing simple machinery and fortifications."
+	trait_desc = "Boosts the engineering and construction skill to 3. Crewmember received basic training in repairing simple machinery and fortifications."
 	skill = SKILL_ENGINEER
+	secondary_skill = SKILL_CONSTRUCTION
 	skill_increment = 3
 	skill_cap = 3
 

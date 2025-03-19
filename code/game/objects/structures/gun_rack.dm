@@ -79,7 +79,7 @@
 	name = "frontal cannon ammo storage compartment"
 	icon_state = "frontal"
 	desc = "A small compartment that stores ammunition for the APC's 'Bleihagel RE-RE700 Frontal Cannon'."
-	max_stored = 2
+	max_stored = 6
 	initial_stored = 0
 	allowed_type = /obj/item/ammo_magazine/hardpoint/m56_cupola/frontal_cannon
 

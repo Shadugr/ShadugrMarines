@@ -99,6 +99,46 @@
 	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Spotter")
 	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Spotter")
 
+/obj/item/pamphlet/skill/engi
+	name = "Engineer instructional pamphlet"
+	desc = "A pamphlet used to quickly impart vital knowledge. This one has the image of a turret on it."
+	icon_state = "pamphlet_engineering"
+	trait = /datum/character_trait/skills/engi
+	bypass_pamphlet_limit = TRUE
+
+/obj/item/pamphlet/skill/engi/can_use(mob/living/carbon/human/user)
+	var/specialist_skill = user.skills.get_skill_level(SKILL_SPEC_WEAPONS)
+	var/engineer_skill = user.skills.get_skill_level(SKILL_ENGINEER)
+	if(engineer_skill == SKILL_ENGINEER_ENGI)
+		to_chat(user, SPAN_WARNING("You don't need to use this! Give it to another marine to make them engineer."))
+		return FALSE
+	if(specialist_skill != SKILL_SPEC_DEFAULT)
+		to_chat(user, SPAN_WARNING("You're already a engineer! Give this to a lesser trained marine."))
+		return FALSE
+
+	if(user.job != JOB_SQUAD_MARINE)
+		to_chat(user, SPAN_WARNING("Only squad riflemen can use this."))
+		return
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	if(!ID) //not wearing an ID
+		to_chat(user, SPAN_WARNING("You should wear your ID before doing this."))
+		return FALSE
+	if(!ID.check_biometrics(user))
+		to_chat(user, SPAN_WARNING("You should wear your ID before doing this."))
+		return FALSE
+
+	return ..()
+
+/obj/item/pamphlet/skill/engi/on_use(mob/living/carbon/human/user)
+	. = ..()
+	user.rank_fallback = "engi"
+	user.hud_set_squad()
+
+	var/obj/item/card/id/ID = user.get_idcard()
+	ID.set_assignment((user.assigned_squad ? (user.assigned_squad.name + " ") : "") + "Engineer")
+	GLOB.data_core.manifest_modify(user.real_name, WEAKREF(user), "Engineer")
+
 /obj/item/pamphlet/skill/machinegunner
 	name = "heavy machinegunner instructional pamphlet"
 	desc = "A pamphlet used to quickly impart vital knowledge. This one has an engineering and a machinegun insignia."

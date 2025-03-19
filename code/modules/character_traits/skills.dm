@@ -54,6 +54,13 @@
 	trait_desc = "Boosts the engineering skill to 1. Crewmember received basic training in repairing simple machinery and fortifications."
 	skill = SKILL_ENGINEER
 
+/datum/character_trait/skills/engi
+	trait_name = "Complete Engineering Training"
+	trait_desc = "Boosts the engineering skill to 3. Crewmember received basic training in repairing simple machinery and fortifications."
+	skill = SKILL_ENGINEER
+	skill_increment = 3
+	skill_cap = 3
+
 /datum/character_trait/skills/construction
 	trait_name = "Basic Construction Training"
 	trait_desc = "Boosts the construction skill to 1. Crewmember received training in constructing simple fortifications."

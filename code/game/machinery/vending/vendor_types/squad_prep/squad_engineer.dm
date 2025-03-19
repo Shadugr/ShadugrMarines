@@ -211,10 +211,12 @@ GLOBAL_LIST_INIT(cm_vending_clothing_engi, list(
 		/obj/item/explosive/plastic,
 		/obj/item/stack/sandbags_empty = 50,
 		/obj/item/stack/sheet/metal/large_stack,
-		/obj/item/stack/sheet/plasteel/med_large_stack,
+		/obj/item/stack/sheet/metal/large_stack,
+		/obj/item/stack/sheet/plasteel/large_stack,
 		/obj/item/circuitboard/apc,
 		/obj/item/cell/high,
 		/obj/item/tool/shovel/etool/folded,
 		/obj/item/device/lightreplacer,
 		/obj/item/weapon/gun/smg/nailgun/compact/tactical,
+		/obj/item/pamphlet/skill/engi,
 	)

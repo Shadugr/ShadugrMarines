@@ -32,7 +32,7 @@
 
 ///Helper for only alphanumeric characters plus common punctuation, spaces, underscore and hyphen _ -.
 /proc/replace_non_alphanumeric_plus(text)
-	var/regex/alphanumeric = regex(@{"[^a-z0-9 ,.?!\-_&]"}, "gi")
+	var/regex/alphanumeric = regex(@{"[^a-z0-9а-яА-ЯёЁ ,.?!\-_&]"}, "gi")
 	return alphanumeric.Replace(text, "")
 
 /proc/readd_quotes(text)
@@ -91,24 +91,24 @@
 
 //Filters out undesirable characters from names
 /proc/reject_bad_name(t_in, allow_numbers = 0, max_length = MAX_NAME_LEN, allow_signs = TRUE)
-	if(!t_in || length(t_in) > max_length)
+	if(!t_in || length_char(t_in) > max_length)
 		return //Rejects the input if it is null or if it is longer then the max length allowed
 
 	var/number_of_alphanumeric = 0
 	var/last_char_group = 0
 	var/t_out = ""
 
-	for(var/i=1, i<=length(t_in), i++)
-		var/ascii_char = text2ascii(t_in,i)
+	for(var/i=1, i<=length_char(t_in), i++)
+		var/ascii_char = text2ascii_char(t_in,i)
 		switch(ascii_char)
 			// A  .. Z
-			if(65 to 90) //Uppercase Letters
+			if(65 to 90, 1040 to 1071, 1025) //Uppercase Letters
 				t_out += ascii2text(ascii_char)
 				number_of_alphanumeric++
 				last_char_group = 4
 
 			// a  .. z
-			if(97 to 122) //Lowercase Letters
+			if(97 to 122, 1072 to 1103, 1105) //Lowercase Letters
 				if(last_char_group<2)
 					t_out += ascii2text(ascii_char-32) //Force uppercase first character
 				else
@@ -151,7 +151,7 @@
 		return //protects against tiny names like "A" and also names like "' ' ' ' ' ' ' '"
 
 	if(last_char_group == 1)
-		t_out = copytext(t_out,1,length(t_out)) //removes the last character (in this case a space)
+		t_out = copytext(t_out,1,length_char(t_out)) //removes the last character (in this case a space)
 
 	for(var/bad_name in list("space","floor","wall","r-wall","monkey","unknown","inactive ai")) //prevents these common metagamey names
 		if(cmptext(t_out,bad_name))

@@ -6059,6 +6059,10 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
+/obj/item/device/autopsy_scanner{
+	pixel_y = -4;
+	pixel_x = -6
+	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "avL" = (

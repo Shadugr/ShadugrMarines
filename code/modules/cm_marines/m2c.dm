@@ -180,7 +180,7 @@
 	icon_empty = "M56DE_e"
 	rounds_max = 150
 	ammo = /datum/ammo/bullet/machinegun/auto
-	fire_delay = 2.5
+	fire_delay = 0.35 SECONDS
 	var/grip_dir = null
 	var/fold_time = 1.5 SECONDS
 	var/repair_time = 5 SECONDS
@@ -188,7 +188,6 @@
 	health = 230
 	health_max = 230
 	display_ammo = FALSE
-	iff_allowed = FALSE
 
 	var/static/image/barrel_overheat_image
 	var/has_barrel_overlay = FALSE

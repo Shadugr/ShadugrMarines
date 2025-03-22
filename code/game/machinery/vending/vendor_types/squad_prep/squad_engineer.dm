@@ -60,7 +60,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_engi, list(
 		list("M240 Incinerator Unit", 8, /obj/item/storage/box/guncase/flamer, null, VENDOR_ITEM_REGULAR),
 		list("M79 Grenade Launcher", 24, /obj/item/storage/box/guncase/m79, null, VENDOR_ITEM_REGULAR),
 		list("M41AE2 heavy pulse rifle", 24, /obj/item/storage/box/guncase/lmg, null, VENDOR_ITEM_REGULAR),
-		list("M56D Heavy Machine Gun", 24, /obj/item/storage/box/guncase/m56d, null, VENDOR_ITEM_REGULAR),
+		list("M56D Heavy Machine Gun", 25, /obj/item/storage/box/guncase/m56d, null, VENDOR_ITEM_REGULAR),
+		list("M2C Heavy Machine Gun", 30, /obj/item/storage/box/guncase/m2c, null, VENDOR_ITEM_REGULAR),
 
 		list("CLOTHING ITEMS", 0, null, null, null),
 		list("Machete Scabbard (Full)", 6, /obj/item/storage/large_holster/machete/full, null, VENDOR_ITEM_REGULAR),

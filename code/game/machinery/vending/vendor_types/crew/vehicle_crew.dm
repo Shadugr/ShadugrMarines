@@ -68,7 +68,7 @@
 		marine_announcement("A tank is being sent up to reinforce this operation.")
 	else if(selected_vehicle == "ARC")
 		marine_announcement("An ARC is being sent up to reinforce this operation.")
-	else
+	else if(selected_vehicle == "APC")
 		marine_announcement("An APC is being sent up to reinforce this operation.")
 
 /obj/structure/machinery/cm_vending/gear/vehicle_crew/get_listed_products(mob/user)

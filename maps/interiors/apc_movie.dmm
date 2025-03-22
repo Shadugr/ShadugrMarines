@@ -31,6 +31,12 @@
 	pixel_y = 12;
 	pixel_x = 7
 	},
+/obj/structure/machinery/computer/cameras/almayer/vehicle{
+	network = list("Golden Arrow","Vehicle","Midway");
+	pixel_x = -6;
+	dir = 4;
+	pixel_y = -10
+	},
 /turf/open/shuttle/vehicle/floor_1_3,
 /area/interior/vehicle/apc/movie)
 "d" = (
@@ -280,10 +286,6 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/interior/vehicle/apc/movie)
 "G" = (
-/obj/structure/gun_rack/m41{
-	pixel_y = 22;
-	density = 0
-	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/interior/vehicle/apc/movie)
 "H" = (
@@ -291,8 +293,14 @@
 	icon_state = "corner_inverse_R";
 	opacity = 0
 	},
+/obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad{
+	req_one_access = list();
+	req_one_access_txt = "8;12;39;40;22;27";
+	req_access = list();
+	pixel_y = -10
+	},
 /turf/open/space/basic,
-/area/space)
+/area/interior/vehicle/apc/movie)
 "I" = (
 /obj/structure/interior_wall/apc{
 	icon_state = "front_3"

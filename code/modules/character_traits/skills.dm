@@ -62,6 +62,13 @@
 	skill_increment = 3
 	skill_cap = 3
 
+/datum/character_trait/skills/defib
+	trait_name = "Complete First Aid And Defibrillator Training"
+	trait_desc = "Boosts the Medical skill to 2. Crewmember has attended several first aid training sessions, learned basic medical care, defibrillator use."
+	skill = SKILL_MEDICAL
+	skill_increment = 2
+	skill_cap = 2
+
 /datum/character_trait/skills/construction
 	trait_name = "Basic Construction Training"
 	trait_desc = "Boosts the construction skill to 1. Crewmember received training in constructing simple fortifications."

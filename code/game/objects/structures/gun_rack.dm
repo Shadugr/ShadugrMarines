@@ -87,7 +87,7 @@
 	name = "dual cannon ammo storage compartment"
 	icon_state = "boyars"
 	desc = "A small compartment that stores ammunition for the APC's 'PARS-159 Boyars Dualcannon'."
-	max_stored = 2
+	max_stored = 6
 	initial_stored = 0
 	allowed_type = /obj/item/ammo_magazine/hardpoint/boyars_dualcannon
 

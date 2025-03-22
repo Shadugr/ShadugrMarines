@@ -10,6 +10,7 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 		list("Medical Splints", 1, /obj/item/stack/medical/splint, null, VENDOR_ITEM_RECOMMENDED),
 		list("Gauze", 1, /obj/item/stack/medical/bruise_pack, null, VENDOR_ITEM_REGULAR),
 		list("Ointment", 1, /obj/item/stack/medical/ointment, null, VENDOR_ITEM_REGULAR),
+		list("Stasis Bag", 3, /obj/item/bodybag/cryobag, null, VENDOR_ITEM_REGULAR),
 		list("Blood Bag (O-)", 4, /obj/item/reagent_container/blood/OMinus, null, VENDOR_ITEM_REGULAR),
 
 		list("FIRSTAID KITS", 0, null, null, null),
@@ -96,10 +97,6 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 		list("HELMET OPTICS", 0, null, null, null),
 		list("Night Vision Optic", 45, /obj/item/device/helmet_visor/night_vision, null, VENDOR_ITEM_RECOMMENDED),
 		list("Welding Visor", 5, /obj/item/device/helmet_visor/welding_visor, null, VENDOR_ITEM_REGULAR),
-
-		list("PAMPHLETS", 0, null, null, null),
-		list("JTAC Pamphlet", 15, /obj/item/pamphlet/skill/jtac, null, VENDOR_ITEM_REGULAR),
-		list("Engineering Pamphlet", 15, /obj/item/pamphlet/skill/engineer, null, VENDOR_ITEM_REGULAR),
 
 		list("RADIO KEYS", 0, null, null, null),
 		list("Engineering Radio Encryption Key", 3, /obj/item/device/encryptionkey/engi, null, VENDOR_ITEM_REGULAR),
@@ -226,7 +223,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated,
-		/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated,
+		/obj/item/bodybag/cryobag,
+		/obj/item/bodybag/cryobag,
 	)
 
 GLOBAL_LIST_INIT(cm_vending_clothing_upp_medic, list(

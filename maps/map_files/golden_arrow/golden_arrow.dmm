@@ -2324,6 +2324,11 @@
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
 	name = "\improper Prep Lockers"
 	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
+	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
 "aiq" = (
@@ -2333,6 +2338,11 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
 	name = "\improper Prep Lockers"
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
@@ -2418,14 +2428,6 @@
 /obj/structure/cable,
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
-"aiD" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_left/west,
-/area/golden_arrow/platoonprep)
 "aiG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3989,7 +3991,6 @@
 /turf/open/floor/almayer/edge/southeast,
 /area/golden_arrow/prep_hallway)
 "aoc" = (
-/obj/structure/fence,
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	layer = 1.9
 	},
@@ -4670,14 +4671,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
-"aqC" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_right/west,
-/area/golden_arrow/platoonprep)
 "aqD" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
@@ -4841,11 +4834,6 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/supply)
 "ard" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
 "are" = (
@@ -5220,6 +5208,10 @@
 	pixel_y = 30;
 	phone_id = "Overwatch";
 	phone_category = "Overwatch"
+	},
+/obj/item/pamphlet/skill/defib{
+	pixel_y = -3;
+	pixel_x = -7
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoon_commander_rooms)
@@ -7318,6 +7310,11 @@
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
 	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
+	},
 /turf/open/floor/plating,
 /area/golden_arrow/platoonprep)
 "azx" = (
@@ -7510,11 +7507,6 @@
 	req_access = list();
 	req_one_access_txt = "19;27"
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/cargo_arrow/east,
 /area/golden_arrow/hangar)
 "aAd" = (
@@ -7558,11 +7550,6 @@
 	},
 /obj/structure/sign/safety/ammunition{
 	pixel_y = 26
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
 	},
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/golden_arrow/hangar)
@@ -8354,17 +8341,6 @@
 	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/prep_hallway)
-"aCK" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/east,
-/area/golden_arrow/hangar)
 "aCM" = (
 /obj/structure/closet/firecloset,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -8716,13 +8692,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
-"aDW" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Equipment Locker";
-	id = "squadarmory"
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/golden_arrow/platoonarmory)
 "aDX" = (
 /obj/structure/machinery/door/airlock/almayer/secure{
 	dir = 1;
@@ -9149,11 +9118,6 @@
 	req_access = list();
 	req_one_access_txt = "19;27"
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/golden_arrow/hangar)
 "aFo" = (
@@ -9341,11 +9305,6 @@
 	pixel_x = 14;
 	pixel_y = -29
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/cargo_arrow/east,
 /area/golden_arrow/hangar)
 "aFW" = (
@@ -9371,6 +9330,11 @@
 "aFY" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
@@ -9665,10 +9629,6 @@
 "aGY" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Equipment Locker";
-	id = "squadarmory"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonarmory)
@@ -10407,11 +10367,6 @@
 	icon_state = "0-8";
 	layer = 2.36
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
 "aJz" = (
@@ -10553,11 +10508,6 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
 "aKj" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Weapons Locker";
-	id = "squadarmory";
-	pixel_y = -4
-	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonarmory)
 "aKk" = (
@@ -12286,11 +12236,6 @@
 	name = "\improper Armored vehicle depot";
 	req_one_access_txt = "19;27"
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 1;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
 "aQU" = (
@@ -12504,13 +12449,14 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/hangar)
 "aRC" = (
+/obj/structure/window/framed/almayer,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
 	id = "squadarmory";
 	name = "\improper Gear Lockers"
 	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/golden_arrow/platoonprep)
+/turf/open/floor/plating,
+/area/golden_arrow/medical)
 "aRD" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -12767,16 +12713,12 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aSv" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/vehicle_crew,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Weapons Locker";
-	id = "squadarmory";
-	pixel_y = -4
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/golden_arrow/platoonarmory)
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/motor_pool)
 "aSw" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -13065,11 +13007,6 @@
 	},
 /obj/structure/sign/safety/ammunition{
 	pixel_x = -18
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Weapons Locker";
-	id = "squadarmory";
-	pixel_y = -4
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonarmory)
@@ -14394,11 +14331,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
 "aYH" = (
@@ -14523,6 +14455,11 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -14961,14 +14898,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
-"bvE" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/west,
-/area/golden_arrow/hangar)
 "bwh" = (
 /obj/structure/sign/safety/one{
 	pixel_y = -24
@@ -18674,14 +18603,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
-"oia" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/east,
-/area/golden_arrow/hangar)
 "ojW" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.3;
@@ -18993,17 +18914,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/supply)
-"pDg" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/west,
-/area/golden_arrow/hangar)
 "pDh" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -19513,10 +19423,12 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
+/obj/structure/machinery/door/airlock/almayer/secure{
 	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
+	id = "briefingdoor";
+	req_access = list();
+	name = "\improper Armored crew armory";
+	req_one_access_txt = "19;27"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/motor_pool)
@@ -19572,17 +19484,6 @@
 	},
 /turf/open/floor/almayer/edge/east,
 /area/golden_arrow/lower_cargo)
-"rnq" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/east,
-/area/golden_arrow/hangar)
 "rnt" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/cable/heavyduty{
@@ -20802,24 +20703,6 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
-"wjw" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/sign/safety/bulkhead_door{
-	pixel_y = -29
-	},
-/obj/structure/sign/safety/hazard{
-	pixel_x = 14;
-	pixel_y = -29
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/east,
-/area/golden_arrow/hangar)
 "wmF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -20870,20 +20753,6 @@
 	},
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/lower_cargo)
-"woS" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "squadarmory";
-	name = "\improper Gear Lockers"
-	},
-/turf/open/floor/almayer/cargo_arrow/west,
-/area/golden_arrow/hangar)
 "wuZ" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
@@ -28157,7 +28026,7 @@ jiQ
 aKW
 aCE
 aCE
-aHp
+aRC
 aCE
 aaI
 aEG
@@ -30791,11 +30660,11 @@ aXt
 aTX
 aoq
 aDQ
-aiD
-aRC
-aRC
-aRC
-aqC
+ard
+ard
+ard
+ard
+ard
 aDQ
 amL
 aww
@@ -31847,7 +31716,7 @@ afz
 nOf
 aHZ
 dzT
-aSv
+aGY
 gjM
 aJX
 aqb
@@ -32024,7 +31893,7 @@ bGL
 kYQ
 aHZ
 dzT
-aSv
+aGY
 aZV
 adl
 abk
@@ -32201,7 +32070,7 @@ syi
 kYQ
 aHZ
 moW
-aSv
+aGY
 aRQ
 adl
 eZR
@@ -32384,7 +32253,7 @@ aDg
 aga
 arh
 aoI
-aDW
+aKj
 vNW
 adz
 adz
@@ -32561,7 +32430,7 @@ awQ
 aLp
 aLk
 uoJ
-aDW
+aKj
 kBG
 adz
 adz
@@ -32732,7 +32601,7 @@ rhq
 aUV
 aHZ
 afk
-aSv
+aGY
 aXJ
 aOt
 aQe
@@ -33472,10 +33341,10 @@ aCp
 auT
 adz
 aAi
-pDg
-woS
-pDg
-bvE
+agY
+asm
+agY
+aey
 adz
 adz
 adz
@@ -36931,7 +36800,7 @@ axS
 axS
 axS
 axS
-rZR
+aSv
 awp
 aJk
 axS
@@ -37710,9 +37579,9 @@ adz
 adz
 adz
 aAc
-oia
-aCK
-oia
+afN
+aEA
+afN
 aFU
 adz
 aqu
@@ -37720,10 +37589,10 @@ aCp
 abQ
 adz
 aFm
-rnq
-aCK
-oia
-wjw
+aok
+aEA
+afN
+aKF
 adz
 adz
 adz

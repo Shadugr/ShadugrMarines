@@ -728,7 +728,7 @@
 		list("Suppressor", 6, /obj/item/attachable/suppressor, VENDOR_ITEM_REGULAR),
 
 		list("RAIL", -1, null, null),
-		list("B8 Smart-Scope", 6, /obj/item/attachable/scope/mini_iff, VENDOR_ITEM_REGULAR),
+		list("B8 Smart-Scope", 10, /obj/item/attachable/scope/mini_iff, VENDOR_ITEM_REGULAR),
 		list("Magnetic Harness", 8, /obj/item/attachable/magnetic_harness, VENDOR_ITEM_REGULAR),
 		list("S4 2x Telescopic Mini-Scope", 4, /obj/item/attachable/scope/mini, VENDOR_ITEM_REGULAR),
 		list("S5 Red-Dot Sight", 6, /obj/item/attachable/reddot, VENDOR_ITEM_REGULAR),

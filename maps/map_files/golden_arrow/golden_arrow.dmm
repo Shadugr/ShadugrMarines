@@ -17463,6 +17463,15 @@
 "kQO" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/supplydrop)
+"kRv" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
+	},
+/turf/open/floor/plating,
+/area/golden_arrow/medical)
 "kXG" = (
 /obj/structure/prop/almayer/whiteboard{
 	pixel_y = 25;
@@ -27135,7 +27144,7 @@ aQr
 aog
 aCH
 adj
-aHp
+kRv
 avJ
 aiM
 aEh
@@ -27312,7 +27321,7 @@ azq
 aog
 aDd
 aeA
-aHp
+kRv
 auJ
 ajr
 acH
@@ -27489,7 +27498,7 @@ aog
 aog
 aIz
 aGD
-aHp
+kRv
 anc
 aHM
 cIk

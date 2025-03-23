@@ -427,7 +427,7 @@
 	name = "large magazine pouch"
 	desc = "It can carry many magazines."
 	icon_state = "large_ammo_mag"
-	storage_slots = 4
+	storage_slots = 5
 
 /obj/item/storage/pouch/magazine/pistol
 	name = "pistol magazine pouch"

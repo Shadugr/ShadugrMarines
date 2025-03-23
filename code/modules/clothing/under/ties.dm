@@ -927,9 +927,7 @@
 	var/sheatheSound = 'sound/weapons/gun_pistol_sheathe.ogg'
 	var/drawSound = 'sound/weapons/gun_pistol_draw.ogg'
 	storage_flags = STORAGE_ALLOW_QUICKDRAW|STORAGE_FLAGS_POUCH
-	can_hold = list(
-
-//Can hold variety of pistols and revolvers together with ammo for them. Can also hold the flare pistol and signal/illumination flares.
+	can_hold = list(//Can hold variety of pistols and revolvers together with ammo for them. Can also hold the flare pistol and signal/illumination flares.
 	/obj/item/weapon/gun/pistol,
 	/obj/item/weapon/gun/energy/taser,
 	/obj/item/weapon/gun/revolver,
@@ -1369,7 +1367,6 @@
 	)
 
 //Partial Pre-load For Props
-
 /obj/item/clothing/accessory/storage/webbing/m3/mag/mk1
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/mk1
 

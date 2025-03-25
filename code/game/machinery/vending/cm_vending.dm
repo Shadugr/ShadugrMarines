@@ -543,7 +543,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 			var/turf/target_turf = get_appropriate_vend_turf(user)
 			if(vend_flags & VEND_CLUTTER_PROTECTION)
 				if(length(target_turf.contents) > 25)
-					to_chat(usr, SPAN_WARNING("The floor is too cluttered, make some space."))
+					to_chat(user, SPAN_WARNING("The floor is too cluttered, make some space.")) // пофиксил отображение ошибки для пользователя
 					vend_fail()
 					return FALSE
 			if(HAS_TRAIT(user,TRAIT_OPPOSABLE_THUMBS)) // the big monster 7 ft with thumbs does not care for squads
@@ -595,7 +595,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 								return FALSE
 
 					if(!handle_vend(itemspec, user))
-						to_chat(user, SPAN_WARNING("You can't buy things from this category anymore."))
+						to_chat(user, SPAN_WARNING("Вы больше не можете брать предметы из этой категории."))
 						vend_fail()
 						return FALSE
 
@@ -1155,7 +1155,6 @@ GLOBAL_LIST_EMPTY(vending_products)
 	.["displayed_categories"] = vendor_user_inventory_list(user)
 
 //------------ESSENTIALS SETS AND RANDOM GEAR SPAWNER---------------
-
 /obj/effect/essentials_set
 	var/list/spawned_gear_list
 
@@ -1278,7 +1277,6 @@ GLOBAL_LIST_INIT(cm_vending_gear_corresponding_types_list, list(
 	))
 
 //---helper procs
-
 /obj/structure/machinery/cm_vending/proc/vendor_user_inventory_list(mob/user, cost_index=2, priority_index=5)
 	. = list()
 	// default list format

@@ -983,7 +983,9 @@
 /obj/item/storage/pouch/pressurized_reagent_canister/tricordrazine/Initialize()
 	. = ..()
 	fill_with("tricordrazine")
-
+/obj/item/storage/pouch/pressurized_reagent_canister/tramadol/Initialize()
+	. = ..()
+	fill_with("tramadol")
 /obj/item/storage/pouch/pressurized_reagent_canister/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/reagent_container/glass/pressurized_canister))
 		if(inner)

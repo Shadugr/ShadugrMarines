@@ -234,21 +234,24 @@
 	pixel_x = -5;
 	pixel_y = 16
 	},
-/obj/structure/bed/portable_surgery{
-	name = "vehicle surgical bed";
-	foldabletype = null
-	},
+/obj/structure/machinery/optable,
 /turf/open/shuttle/vehicle/dark_sterile,
 /area/interior/vehicle/apc/med)
 "E" = (
 /obj/structure/vehicle_locker{
-	pixel_y = 28
+	pixel_y = 28;
+	pixel_x = 10
 	},
 /obj/structure/bed/chair/vehicle{
 	pixel_x = -8
 	},
 /obj/structure/bed/chair/vehicle{
 	pixel_x = 8
+	},
+/obj/structure/vehicle_locker/movie{
+	pixel_y = 25;
+	layer = 2.9;
+	pixel_x = -13
 	},
 /turf/open/shuttle/vehicle/floor_3_8_1,
 /area/interior/vehicle/apc/med)
@@ -380,12 +383,12 @@
 	pixel_x = 8
 	},
 /obj/effect/landmark/interior/spawn/telephone{
-	pixel_x = 5;
+	pixel_x = -2;
 	pixel_y = 30
 	},
 /obj/structure/extinguisher_cabinet/lifeboat{
 	icon = 'icons/obj/vehicles/interiors/general.dmi';
-	pixel_x = -8;
+	pixel_x = -11;
 	pixel_y = 28
 	},
 /turf/open/shuttle/vehicle/floor_3_13,

@@ -23,6 +23,7 @@
 #define MARINE_CAN_BUY_COMBAT_SHOES "combat_shoes"
 #define MARINE_CAN_BUY_COMBAT_HELMET "combat_helmet"
 #define MARINE_CAN_BUY_COMBAT_ARMOR "combat_armor"
+#define MARINE_CAN_BUY_ENC_KEY "enc_key"
 #define MARINE_CAN_BUY_KIT "kit"
 #define MARINE_CAN_BUY_DRESS "dress"
 #define CIVILIAN_CAN_BUY_BACKPACK "civilian_backpack"
@@ -55,6 +56,7 @@
 	MARINE_CAN_BUY_COMBAT_SHOES = 1, \
 	MARINE_CAN_BUY_COMBAT_HELMET = 1, \
 	MARINE_CAN_BUY_COMBAT_ARMOR = 1, \
+	MARINE_CAN_BUY_ENC_KEY = 1, \
 	MARINE_CAN_BUY_KIT = 1, \
 	MARINE_CAN_BUY_DRESS = 99)
 

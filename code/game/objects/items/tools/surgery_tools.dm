@@ -207,16 +207,16 @@
 	///percent of gel remaining in container
 	var/remaining_gel = 100
 	///If gel is used when doing bone surgery
-	var/unlimited_gel = FALSE
+	var/unlimited_gel = TRUE
 	///Time it takes per 10% of gel refilled
 	var/time_per_refill = 1 SECONDS
 	///if the bone gel is actively being refilled
 	var/refilling = FALSE
 
 	///How much bone gel is needed to fix a fracture
-	var/fracture_fix_cost = 5
+	var/fracture_fix_cost = 1
 	///How much bone gel is needed to mend bones
-	var/mend_bones_fix_cost = 5
+	var/mend_bones_fix_cost = 1
 
 /obj/item/tool/surgery/bonegel/update_icon()
 	. = ..()

@@ -99,6 +99,7 @@
 		/obj/item/tool/shovel/etool,
 		/obj/item/stack/cable_coil,
 		/obj/item/weapon/gun/smg/nailgun/compact,
+		/obj/item/ammo_magazine/smg/nailgun,
 		/obj/item/cell,
 		/obj/item/circuitboard,
 		/obj/item/stock_parts,

@@ -108,3 +108,7 @@
 
 /obj/structure/phone_base/overwatch
 	name = "overwatch receiver"
+/obj/item/phone
+	name = "telephone"
+	icon = 'icons/obj/structures/structures.dmi'
+	icon_state = "rpb_phone"

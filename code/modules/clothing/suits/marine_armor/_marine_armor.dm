@@ -235,16 +235,6 @@
 	// Replace the digits in the current icon state with `new_look`. (E.g. "L6" -> "L2")
 	icon_state = digits.Replace(icon_state, new_look)
 
-/obj/item/clothing/suit/storage/marine/medium/rto
-	icon_state = "io"
-	armor_variation = 0
-	name = "\improper M4 pattern marine armor"
-	desc = "A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches."
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_rad = CLOTHING_ARMOR_MEDIUM
-	storage_slots = 4
-	light_range = 5 //slightly higher
-	specialty = "M4 pattern marine"
 
 /obj/item/clothing/suit/storage/marine/MP
 	name = "\improper M2 pattern MP armor"
@@ -341,7 +331,18 @@
 	item_state_slots = list(WEAR_JACKET = "bridge_coat_armored")
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_RANK)
 
-/obj/item/clothing/suit/storage/marine/medium/leader
+/obj/item/clothing/suit/storage/marine/medium/rto //броня в ФайрТимЛид Шкафу
+	icon_state = "io"
+	armor_variation = 0
+	name = "\improper M4 pattern marine armor"
+	desc = "A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches."
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	storage_slots = 4
+	light_range = 5 //slightly higher
+	specialty = "M4 pattern marine"
+
+/obj/item/clothing/suit/storage/marine/medium/leader //броня СекшСержанта
 	name = "\improper B12 pattern marine armor"
 	desc = "Semi-experimental body armor system similar to M3, incorporating primarily carbon fiber instead of boron carbide. \nDesigned in a lovely olive green, slightly improved protection against blunt impact and biological hazards."
 	icon_state = "7"
@@ -349,6 +350,7 @@
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_energy = CLOTHING_ARMOR_MEDIUM
 	specialty = "B12 pattern marine"

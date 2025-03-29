@@ -963,10 +963,10 @@ Additional game mode variables.
 		if(human.faction == FACTION_MARINE)
 			uscm_personnel_count++
 			var/datum/job/job = GET_MAPPED_ROLE(human.job)
-			marine_pop_size += GLOB.RoleAuthority.calculate_role_weight(job)
+			marine_pop_size += 1 //GLOB.RoleAuthority.calculate_role_weight(job)
 
 	//This gives a decimal value representing a scaling multiplier. Cannot go below 1
-	gear_scale = max(marine_pop_size / MARINE_GEAR_SCALING_NORMAL, 1)
+	gear_scale = marine_pop_size//max(marine_pop_size / MARINE_GEAR_SCALING_NORMAL, 1)
 	gear_scale_max = gear_scale
 	log_debug("SUPPLY: Game start detected [marine_pop_size] weighted marines (out of [uscm_personnel_count]/[length(GLOB.alive_human_list)] USCM humans), resulting in gear_scale = [gear_scale]")
 	return gear_scale

@@ -968,7 +968,7 @@ Additional game mode variables.
 	//This gives a decimal value representing a scaling multiplier. Cannot go below 1
 	gear_scale = marine_pop_size//max(marine_pop_size / MARINE_GEAR_SCALING_NORMAL, 1)
 	gear_scale_max = gear_scale
-	message_admins(SPAN_BLUE("SUPPLY: Game start detected [marine_pop_size] weighted marines (out of [uscm_personnel_count]/[length(GLOB.alive_human_list)] USCM humans), resulting in gear_scale = [gear_scale]"))
+	log_debug("SUPPLY: Game start detected [marine_pop_size] weighted marines (out of [uscm_personnel_count]/[length(GLOB.alive_human_list)] USCM humans), resulting in gear_scale = [gear_scale]")
 	return gear_scale
 
 ///Updates the [/datum/game_mode/var/gear_scale] multiplier based on joining and cryoing marines

@@ -990,7 +990,6 @@ GLOBAL_LIST_INIT(cm_vending_clothing_marine_snowflake, list(
 	list("Yellow Armband", 6, /obj/item/clothing/accessory/armband/engine, null, VENDOR_ITEM_REGULAR),
 	list("Green Armband", 6, /obj/item/clothing/accessory/armband/medgreen, null, VENDOR_ITEM_REGULAR),
 	list("Dress Gloves", 6, /obj/item/clothing/gloves/marine/dress, null, VENDOR_ITEM_REGULAR),
-
 ))
 
 /obj/structure/machinery/cm_vending/clothing/marine/snowflake

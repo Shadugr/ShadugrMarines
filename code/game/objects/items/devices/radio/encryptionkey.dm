@@ -78,6 +78,11 @@
 	icon_state = "jtac_key"
 	channels = list(RADIO_CHANNEL_INTEL = TRUE)
 
+/obj/item/device/encryptionkey/secsrg
+	name = "\improper Section Sergeant Radio Encryption Key"
+	icon_state = "jtac_key"
+	channels = list(RADIO_CHANNEL_INTEL = TRUE, RADIO_CHANNEL_JTAC = TRUE, RADIO_CHANNEL_REQ = TRUE, RADIO_CHANNEL_MEDSCI = TRUE, RADIO_CHANNEL_ENGI = TRUE)
+
 //MARINE ENCRYPTION KEYS
 
 /obj/item/device/encryptionkey/ai_integrated

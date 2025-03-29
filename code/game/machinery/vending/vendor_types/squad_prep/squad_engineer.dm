@@ -89,9 +89,10 @@ GLOBAL_LIST_INIT(cm_vending_gear_engi, list(
 		list("Medical Helmet Optic", 12, /obj/item/device/helmet_visor/medical, null, VENDOR_ITEM_REGULAR),
 
 		list("RADIO KEYS", 0, null, null, null),
-		list("Intel Radio Encryption Key", 3, /obj/item/device/encryptionkey/intel, null, VENDOR_ITEM_REGULAR),
-		list("JTAC Radio Encryption Key", 3, /obj/item/device/encryptionkey/jtac, null, VENDOR_ITEM_REGULAR),
-		list("Supply Radio Encryption Key", 3, /obj/item/device/encryptionkey/req, null, VENDOR_ITEM_REGULAR),
+		list("Engineering Radio Encryption Key", 5, /obj/item/device/encryptionkey/engi, null, VENDOR_ITEM_REGULAR),
+		list("Intel Radio Encryption Key", 5, /obj/item/device/encryptionkey/intel, null, VENDOR_ITEM_REGULAR),
+		list("JTAC Radio Encryption Key", 5, /obj/item/device/encryptionkey/jtac, null, VENDOR_ITEM_REGULAR),
+		list("Medical Radio Encryption Key", 5, /obj/item/device/encryptionkey/med, null, VENDOR_ITEM_REGULAR),
 	))
 
 /obj/structure/machinery/cm_vending/gear/engi
@@ -225,4 +226,5 @@ GLOBAL_LIST_INIT(cm_vending_clothing_engi, list(
 		/obj/item/ammo_magazine/smg/nailgun,
 		/obj/item/ammo_magazine/smg/nailgun,
 		/obj/item/pamphlet/skill/engi,
+		/obj/item/device/encryptionkey/engi,
 	)

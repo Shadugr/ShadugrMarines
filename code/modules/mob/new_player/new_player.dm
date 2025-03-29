@@ -2,6 +2,7 @@
 /mob/new_player
 	var/ready = FALSE
 	var/spawning = FALSE//Referenced when you want to delete the new_player later on in the code.
+	var/job_title = ""
 
 	invisibility = 101
 
@@ -28,6 +29,19 @@
 		client.player_entity.update_panel_data(null)
 		new_player_panel_proc()
 
+
+/mob/new_player/proc/get_ready_job()
+	var/prime_job = src.client.prefs.get_job_by_priority(PRIME_PRIORITY)
+	var/high_job = src.client.prefs.get_job_by_priority(HIGH_PRIORITY)
+	if(prime_job)
+		src.job_title = prime_job
+	else if(high_job)
+		src.job_title = high_job
+	else
+		src.job_title = ""
+		return FALSE
+
+	return TRUE
 
 /mob/new_player/proc/new_player_panel_proc(refresh = FALSE)
 	if(!client)
@@ -466,5 +480,10 @@
 	else
 		. += "Time To Start: SOON"
 
-	. += "Players: [SSticker.totalPlayers]"
+	. += "Number of players: [SSticker.totalPlayers]"
 	. += "Players Ready: [SSticker.totalPlayersReady]"
+	. += ""
+	if(SSticker.totalPlayers > 0)
+		. += "Players:"
+		for(var/mob/new_player/p in GLOB.new_player_list)
+			. += "[p.key] - [p.ready ? "Ready" : "Not Ready"] [(p.ready && p.get_ready_job()) ? "(as [p.job_title])" : ""]"

@@ -65,6 +65,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_pilot_officer, list(
 		list("M30 Tactical Helmet", 0, /obj/item/clothing/head/helmet/upp/marinepilot, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
 		list("Leather Satchel", 0, /obj/item/storage/backpack/satchel, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_MANDATORY),
 		list("MRE", 0, /obj/item/storage/box/MRE, MARINE_CAN_BUY_MRE, VENDOR_ITEM_MANDATORY),
+		list("JTAC Radio Encryption Key", 0, /obj/item/device/encryptionkey/jtac, MARINE_CAN_BUY_ENC_KEY, VENDOR_ITEM_MANDATORY),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
 		list("M70 Flak Jacket", 0, /obj/item/clothing/suit/armor/vest/pilot, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
@@ -147,7 +148,13 @@ GLOBAL_LIST_INIT(cm_vending_clothing_pilot_officer, list(
 		list("Large Magazine Pouch", 15, /obj/item/storage/pouch/magazine/large, null, VENDOR_ITEM_REGULAR),
 		list("Machete Scabbard (Full)", 10, /obj/item/storage/large_holster/machete/full, null, VENDOR_ITEM_REGULAR),
 		list("Machete Pouch (Full)", 15, /obj/item/storage/pouch/machete/full, null, VENDOR_ITEM_REGULAR),
-		list("Motion Detector", 15, /obj/item/device/motiondetector, null, VENDOR_ITEM_RECOMMENDED)
+		list("Motion Detector", 15, /obj/item/device/motiondetector, null, VENDOR_ITEM_RECOMMENDED),
+
+		list("RADIO KEYS", 0, null, null, null),
+		list("Engineering Radio Encryption Key", 5, /obj/item/device/encryptionkey/engi, null, VENDOR_ITEM_REGULAR),
+		list("Intel Radio Encryption Key", 5, /obj/item/device/encryptionkey/intel, null, VENDOR_ITEM_REGULAR),
+		list("JTAC Radio Encryption Key", 5, /obj/item/device/encryptionkey/jtac, null, VENDOR_ITEM_REGULAR),
+		list("Medical Radio Encryption Key", 5, /obj/item/device/encryptionkey/med, null, VENDOR_ITEM_REGULAR),
 	))
 
 GLOBAL_LIST_INIT(cm_vending_clothing_dropship_crew_chief, list(

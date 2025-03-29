@@ -2781,7 +2781,6 @@
 	icon_state = "0-4";
 	layer = 2.36
 	},
-/obj/structure/machinery/part_fabricator/dropship,
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "ajO" = (
@@ -15617,14 +15616,11 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
 "dUY" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Equipment Locker";
-	id = "squadarmory"
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
 	},
-/obj/structure/machinery/light/double/blue{
-	dir = 8;
-	light_color = "#dae2ff";
-	light_power = 0.7
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
@@ -16731,6 +16727,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/lower_cargo)
+"hLd" = (
+/obj/structure/machinery/cm_vending/sorted/attachments/squad{
+	req_one_access = list();
+	req_access = list(22)
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "hMX" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -16907,6 +16910,16 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
+"iHt" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "iKm" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -17360,6 +17373,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/supply)
+"kuD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out"
+	},
+/obj/structure/machinery/part_fabricator/dropship,
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "kwe" = (
 /obj/structure/machinery/cm_vending/clothing/synth,
 /obj/effect/decal/cleanable/dirt{
@@ -19036,6 +19056,18 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/engineering)
+"pPR" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff";
+	light_power = 0.7
+	},
+/obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad{
+	req_one_access = list();
+	req_access = list(22)
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "pPT" = (
 /obj/structure/roof/cargocrane_tracks/horizontal{
 	pixel_y = 14
@@ -19292,6 +19324,12 @@
 	vendor_role = list()
 	},
 /turf/open/floor/plating,
+/area/golden_arrow/hangar)
+"quP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "qwH" = (
 /turf/open/floor/plating,
@@ -32099,16 +32137,16 @@ akt
 adz
 ayX
 adz
-akb
-akb
-akb
-akb
-aEo
-aEo
-aEo
-aEo
-aEo
-aEo
+adz
+adz
+adz
+adz
+awL
+awL
+awL
+awL
+awL
+awL
 aEo
 awL
 aEG
@@ -32276,15 +32314,15 @@ aDz
 adz
 ayX
 adz
-aBu
-avA
-aAW
-avA
-avA
-avA
-aPx
-adz
-adz
+kuD
+quP
+dUY
+quP
+quP
+quP
+iHt
+tpr
+hLd
 adz
 aBu
 aAW
@@ -32460,8 +32498,8 @@ wPI
 vRh
 vRh
 ajI
-adz
-adz
+tpr
+pPR
 adz
 axV
 vRh
@@ -32637,7 +32675,7 @@ akZ
 aoA
 vRh
 acR
-dUY
+tpr
 atv
 adz
 aza

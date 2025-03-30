@@ -8874,6 +8874,11 @@
 	layer = 2.96;
 	pixel_x = 34
 	},
+/obj/item/device/encryptionkey/secsrg{
+	pixel_y = 7;
+	pixel_x = 5;
+	name = "\improper Platoon Commander Radio Encryption Key"
+	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoon_commander_rooms)
 "aEu" = (

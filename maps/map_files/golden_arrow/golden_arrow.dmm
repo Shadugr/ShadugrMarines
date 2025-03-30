@@ -4691,8 +4691,7 @@
 	},
 /obj/structure/machinery/door/airlock/almayer/secure{
 	name = "\improper Platoon Commander's Quarters";
-	req_access = list();
-	req_one_access_txt = "19;12"
+	req_one_access = list()
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"

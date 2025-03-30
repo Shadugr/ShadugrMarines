@@ -26,9 +26,8 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/light/small/blue{
+/obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 8;
-	light_color = "#dae2ff";
 	light_power = 0.5;
 	pixel_y = 10
 	},
@@ -72,9 +71,8 @@
 /area/golden_arrow/medical)
 "gD" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/light/double/blue{
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
-	light_color = "#dae2ff";
 	light_power = 0.7
 	},
 /obj/structure/machinery/computer/med_data/laptop{
@@ -119,17 +117,7 @@
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/golden_arrow/medical)
 "mn" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/roller{
-	pixel_y = 17
-	},
-/obj/item/roller{
-	pixel_y = 23
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_y = 1;
-	pixel_x = -2
-	},
+/obj/structure/machinery/bioprinter,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "mD" = (
@@ -191,6 +179,11 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -266,11 +259,13 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "yh" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
-/obj/structure/machinery/bioprinter,
-/turf/open/floor/almayer/dark_sterile,
+/turf/open/floor/plating,
 /area/golden_arrow/medical)
 "yx" = (
 /obj/effect/decal/warning_stripes{
@@ -279,20 +274,18 @@
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/medical)
 "zs" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/recharger{
-	pixel_y = 3
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/item/stack/sheet/metal/medium_stack,
+/obj/structure/machinery/optable,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "Al" = (
-/obj/structure/machinery/light/double/blue{
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
-	light_color = "#dae2ff";
 	light_power = 0.7
 	},
 /obj/structure/machinery/medical_pod/bodyscanner{
@@ -321,9 +314,8 @@
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/golden_arrow/medical)
 "Cl" = (
-/obj/structure/machinery/light/double/blue{
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
-	light_color = "#dae2ff";
 	light_power = 0.7
 	},
 /obj/effect/decal/warning_stripes{
@@ -413,6 +405,16 @@
 	},
 /obj/item/storage/firstaid/softpack/brute,
 /obj/item/storage/firstaid/softpack/brute,
+/obj/item/roller{
+	pixel_y = 17
+	},
+/obj/item/roller{
+	pixel_y = 17
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_y = 1;
+	pixel_x = -2
+	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "HP" = (
@@ -459,9 +461,8 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "Lb" = (
-/obj/structure/machinery/light/double/blue{
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
-	light_color = "#dae2ff";
 	light_power = 0.7
 	},
 /obj/structure/machinery/cm_vending/sorted/medical{
@@ -505,21 +506,29 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/turf/open/floor/almayer/dark_sterile,
-/area/golden_arrow/medical)
-"Mt" = (
-/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/autopsy_scanner{
+	pixel_y = -4;
+	pixel_x = -6
+	},
 /obj/item/storage/box/bodybags{
 	pixel_y = 11;
 	pixel_x = -5
 	},
 /obj/item/storage/box/bodybags{
-	pixel_y = 3;
-	pixel_x = -2
+	pixel_y = 11;
+	pixel_x = -5
 	},
+/turf/open/floor/almayer/dark_sterile,
+/area/golden_arrow/medical)
+"Mt" = (
+/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/recharger{
+	pixel_y = 3
+	},
+/obj/item/stack/sheet/metal/medium_stack,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "NI" = (
@@ -538,6 +547,15 @@
 	layer = 2.52
 	},
 /turf/open/floor/almayer/test_floor4,
+/area/golden_arrow/medical)
+"PX" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 1;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
+	},
+/turf/open/floor/plating,
 /area/golden_arrow/medical)
 "Rj" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
@@ -566,9 +584,8 @@
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/medical)
 "SK" = (
-/obj/structure/machinery/light/double/blue{
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
-	light_color = "#dae2ff";
 	light_power = 0.7
 	},
 /obj/structure/machinery/cm_vending/clothing/medic{
@@ -624,7 +641,7 @@
 /area/golden_arrow/medical)
 
 (1,1,1) = {"
-we
+PX
 LS
 gD
 DC
@@ -635,7 +652,7 @@ Rx
 SE
 "}
 (2,1,1) = {"
-we
+PX
 Hi
 Jn
 eb
@@ -646,7 +663,7 @@ gN
 Rx
 "}
 (3,1,1) = {"
-we
+PX
 ay
 rI
 Rj
@@ -685,7 +702,7 @@ Ey
 qf
 bV
 bV
-we
+yh
 bV
 Rx
 "}
@@ -705,7 +722,7 @@ uR
 gw
 ws
 zs
-yh
+zs
 yx
 GN
 IV

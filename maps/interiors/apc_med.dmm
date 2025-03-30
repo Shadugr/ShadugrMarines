@@ -235,6 +235,9 @@
 	pixel_y = 16
 	},
 /obj/structure/machinery/optable,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
 /turf/open/shuttle/vehicle/dark_sterile,
 /area/interior/vehicle/apc/med)
 "E" = (
@@ -249,7 +252,12 @@
 	pixel_x = 8
 	},
 /obj/structure/vehicle_locker/movie{
-	pixel_y = 25;
+	pixel_y = 20;
+	layer = 2.9;
+	pixel_x = -13
+	},
+/obj/structure/vehicle_locker/movie{
+	pixel_y = 31;
 	layer = 2.9;
 	pixel_x = -13
 	},

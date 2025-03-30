@@ -5826,6 +5826,16 @@
 	},
 /obj/item/storage/firstaid/softpack/brute,
 /obj/item/storage/firstaid/softpack/brute,
+/obj/item/roller{
+	pixel_y = 17
+	},
+/obj/item/roller{
+	pixel_y = 17
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_y = 1;
+	pixel_x = -2
+	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "auL" = (
@@ -6018,14 +6028,13 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
 "avI" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/recharger{
-	pixel_y = 3
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/item/stack/sheet/metal/medium_stack,
+/obj/structure/machinery/optable,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "avJ" = (
@@ -6052,6 +6061,14 @@
 /obj/item/device/autopsy_scanner{
 	pixel_y = -4;
 	pixel_x = -6
+	},
+/obj/item/storage/box/bodybags{
+	pixel_y = 11;
+	pixel_x = -5
+	},
+/obj/item/storage/box/bodybags{
+	pixel_y = 11;
+	pixel_x = -5
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -6415,17 +6432,13 @@
 /area/golden_arrow/hangar)
 "axh" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/item/storage/box/bodybags{
-	pixel_y = 11;
-	pixel_x = -5
-	},
-/obj/item/storage/box/bodybags{
-	pixel_y = 3;
-	pixel_x = -2
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/recharger{
+	pixel_y = 3
+	},
+/obj/item/stack/sheet/metal/medium_stack,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "axj" = (
@@ -6800,13 +6813,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
-"ayf" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/bioprinter,
-/turf/open/floor/almayer/dark_sterile,
-/area/golden_arrow/medical)
 "ayi" = (
 /obj/structure/closet/secure_closet/smartgunner{
 	req_access_txt = "14;40";
@@ -10326,17 +10332,7 @@
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/prep_hallway)
 "aJs" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/roller{
-	pixel_y = 17
-	},
-/obj/item/roller{
-	pixel_y = 23
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_y = 1;
-	pixel_x = -2
-	},
+/obj/structure/machinery/bioprinter,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "aJu" = (
@@ -28429,7 +28425,7 @@ aHR
 aPt
 aIw
 avI
-ayf
+avI
 rAj
 aBv
 akT

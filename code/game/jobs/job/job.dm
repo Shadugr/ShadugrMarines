@@ -283,10 +283,15 @@
 			assigned_squad = human.assigned_squad.name
 
 		var/turf/join_turf
+		var/obj/effect/landmark/start/join_mark
 		if(assigned_squad && GLOB.spawns_by_squad_and_job[assigned_squad] && GLOB.spawns_by_squad_and_job[assigned_squad][type])
-			join_turf = get_turf(pick(GLOB.spawns_by_squad_and_job[assigned_squad][type]))
+			join_mark = pick(GLOB.spawns_by_squad_and_job[assigned_squad][type])
+			join_turf = get_turf(join_mark)
+			LAZYREMOVE(GLOB.spawns_by_squad_and_job[assigned_squad][type], join_mark)
 		else if(GLOB.spawns_by_job[type])
-			join_turf = get_turf(pick(GLOB.spawns_by_job[type]))
+			join_mark = pick(GLOB.spawns_by_job[type])
+			join_turf = get_turf(join_mark)
+			LAZYREMOVE(GLOB.spawns_by_job[type], join_mark)
 		else if(assigned_squad && GLOB.latejoin_by_squad[assigned_squad])
 			join_turf = get_turf(pick(GLOB.latejoin_by_squad[assigned_squad]))
 		else if(GLOB.latejoin_by_job[title])

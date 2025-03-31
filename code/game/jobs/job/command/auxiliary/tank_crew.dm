@@ -48,6 +48,7 @@
 /obj/effect/landmark/start/tank_crew
 	name = JOB_TANK_CREW
 	job = /datum/job/command/tank_crew
+	icon_state = "tc_spawn"
 
 #undef CPL_VARIANT
 #undef SGT_VARIANT

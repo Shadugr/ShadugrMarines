@@ -694,9 +694,9 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	if(!GLOB.RoleAuthority)
 		return
 
-	var/host_bypass = FALSE
-	if(user.client?.admin_holder?.check_for_rights(R_HOST))
-		host_bypass = TRUE
+	var/admin_bypass = FALSE
+	if(user.client?.admin_holder?.check_for_rights(R_ADMIN))
+		admin_bypass = TRUE
 
 	var/HTML = "<body>"
 	HTML += "<tt><center>"
@@ -773,7 +773,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 					b_color = "orange"
 					priority_text = "LOW"
 
-			if(j == PRIME_PRIORITY && !host_bypass && (!job.prime_priority || user.client?.get_total_human_playtime() < JOB_PLAYTIME_TIER_2))
+			if(j == PRIME_PRIORITY && !admin_bypass)
 				continue
 
 			HTML += "<a class='[j == cur_priority ? b_color : "inactive"]' href='byond://?_src_=prefs;preference=job;task=input;text=[job.title];target_priority=[j];'>[priority_text]</a>"

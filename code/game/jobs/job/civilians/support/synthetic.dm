@@ -1,15 +1,18 @@
+#define SGM_VARIANT "Sergeant Major"
+
 /datum/job/civilian/synthetic
 	title = JOB_SYNTH
 	total_positions = 2
 	spawn_positions = 1
 	allow_additional = 1
-	scaled = 1
+	scaled = FALSE
 	supervisors = "the acting commanding officer"
 	selection_class = "job_synth"
-	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_WHITELISTED|ROLE_CUSTOM_SPAWN
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_WHITELISTED|ROLE_CUSTOM_SPAWN|ROLE_ADD_TO_SQUAD
 	flags_whitelist = WHITELIST_SYNTHETIC
 	gear_preset = /datum/equipment_preset/synth/uscm
 	entry_message_body = "You are a <a href='"+WIKI_PLACEHOLDER+"'>Synthetic!</a> You are held to a higher standard and are required to obey not only the Server Rules but Marine Law and Synthetic Rules. Failure to do so may result in your White-list Removal. Your primary job is to support and assist all USCM Departments and Personnel on-board. In addition, being a Synthetic gives you knowledge in every field and specialization possible on-board the ship. As a Synthetic you answer to the acting commanding officer. Special circumstances may change this!"
+	job_options = list(SGM_VARIANT = "SGM")
 
 /datum/job/civilian/synthetic/New()
 	. = ..()
@@ -46,7 +49,23 @@
 		total_positions_so_far = positions
 	return positions
 
+/datum/job/civilian/synthetic/ai
+	total_positions = 1
+	spawn_positions = 1
+	allow_additional = 0
+
+/datum/job/civilian/synthetic/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+
+/datum/job/civilian/synthetic/ai/set_spawn_positions(count)
+	return spawn_positions
+
+/datum/job/civilian/synthetic/ai/get_total_positions(latejoin = 0)
+	return latejoin ? total_positions : spawn_positions
+
 /obj/effect/landmark/start/synthetic
 	name = JOB_SYNTH
 	icon_state = "syn_spawn"
 	job = /datum/job/civilian/synthetic
+
+#undef SGM_VARIANT

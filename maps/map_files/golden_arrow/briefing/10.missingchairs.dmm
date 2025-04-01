@@ -33,7 +33,6 @@
 /area/golden_arrow/briefing)
 "gh" = (
 /obj/structure/platform,
-/obj/structure/machinery/power/apc/almayer/east,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -270,6 +269,14 @@
 "rn" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"rJ" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	name = "\improper Synthetic airlock";
+	req_one_access = list();
+	req_access = list(36)
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "tF" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt{
@@ -336,6 +343,10 @@
 	pixel_x = 1
 	},
 /turf/open/floor/almayer,
+/area/golden_arrow/briefing)
+"yJ" = (
+/obj/structure/machinery/power/apc/almayer/east,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
 "AM" = (
 /obj/structure/prop/invuln/overhead_pipe{
@@ -855,7 +866,7 @@ NS
 Ma
 Ma
 gh
-rn
+yJ
 Nw
 Ma
 Oa
@@ -868,7 +879,7 @@ mG
 (8,1,1) = {"
 Ma
 Ma
-Ma
+rJ
 Ma
 Ma
 eI

@@ -8646,6 +8646,9 @@
 /area/golden_arrow/hangar)
 "aDJ" = (
 /obj/structure/machinery/power/apc/almayer/north,
+/obj/structure/closet/secure_closet/marine_personal{
+	job = "Synthetic"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
 "aDL" = (
@@ -10072,19 +10075,15 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/prep_hallway)
 "aIB" = (
-/obj/structure/prop/invuln{
-	icon = 'icons/obj/structures/structures.dmi';
-	icon_state = "ladder11";
-	pixel_y = 10;
-	desc = "A sturdy metal ladder.";
-	name = "ladder";
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /obj/structure/sign/safety/ladder{
 	pixel_x = -17
+	},
+/obj/structure/ladder{
+	pixel_y = 10;
+	id = "synthlad"
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
@@ -14133,6 +14132,11 @@
 /obj/item/prop/almayer/comp_closed{
 	pixel_y = 10
 	},
+/obj/item/device/encryptionkey/secsrg{
+	pixel_y = -6;
+	pixel_x = 5;
+	name = "\improper Platoon Commander Radio Encryption Key"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
 "aXJ" = (
@@ -15285,6 +15289,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
+"cwO" = (
+/obj/structure/machinery/power/apc/almayer/east,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/briefing)
 "cxa" = (
 /obj/structure/barricade/handrail,
 /obj/structure/barricade/handrail{
@@ -15688,6 +15696,11 @@
 	icon_state = "NE-out";
 	pixel_y = 1;
 	pixel_x = 1
+	},
+/obj/structure/ladder{
+	pixel_y = 0;
+	id = "synthlad";
+	height = -1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
@@ -18350,7 +18363,6 @@
 /area/golden_arrow/engineering)
 "nlR" = (
 /obj/structure/platform,
-/obj/structure/machinery/power/apc/almayer/east,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -19256,6 +19268,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/lower_cargo)
+"pYQ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/cryopod/big{
+	dir = 4;
+	layer = 3.1;
+	pixel_x = -5
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/synthcloset)
 "pZs" = (
 /obj/structure/platform{
 	dir = 4;
@@ -20328,6 +20351,12 @@
 	layer = 2.52
 	},
 /obj/structure/machinery/light/double/blue,
+/obj/effect/landmark/start/synthetic{
+	job = /datum/job/civilian/synthetic/ai
+	},
+/obj/effect/landmark/late_join{
+	job = "Synthetic"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
 "tJa" = (
@@ -20476,6 +20505,14 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
+"uEJ" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	name = "\improper Synthetic airlock";
+	req_one_access = list();
+	req_access = list(36)
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "uJn" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -29133,7 +29170,7 @@ aYv
 aYv
 avw
 wRv
-aYv
+pYQ
 aYv
 adI
 fKv
@@ -30463,7 +30500,7 @@ aEo
 aEo
 aEo
 nlR
-qba
+cwO
 aVi
 aEo
 dSy
@@ -30639,7 +30676,7 @@ aeA
 aEo
 aEo
 aEo
-aEo
+uEJ
 aEo
 aEo
 awf

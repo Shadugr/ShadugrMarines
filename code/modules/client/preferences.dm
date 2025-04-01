@@ -713,6 +713,9 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 		active_role_names = GLOB.ROLES_DISTRESS_SIGNAL
 
 	for(var/role_name as anything in active_role_names)
+		if(role_name == JOB_SYNTH && !admin_bypass)
+			continue
+
 		var/datum/job/job = GLOB.RoleAuthority.roles_by_name[role_name]
 		if(!job)
 			debug_log("Missing job for prefs: [role_name]")

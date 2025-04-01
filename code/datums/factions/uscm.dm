@@ -32,6 +32,7 @@
 			if(JOB_MARINE_RAIDER_SL) marine_rk = "soctl"
 			if(JOB_MARINE_RAIDER_CMD) marine_rk = "soccmd"
 			if(JOB_SQUAD_TECH) marine_rk = "tech"
+			if(JOB_SYNTH) marine_rk = "syn"
 		if(squad.squad_leader == current_human)
 			switch(squad.squad_type)
 				if("Platoon") marine_rk = "leader_a"

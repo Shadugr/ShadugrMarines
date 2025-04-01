@@ -962,7 +962,7 @@ Additional game mode variables.
 	for(var/mob/living/carbon/human/human as anything in GLOB.alive_human_list)
 		if(human.faction == FACTION_MARINE)
 			uscm_personnel_count++
-			var/datum/job/job = GET_MAPPED_ROLE(human.job)
+			// var/datum/job/job = GET_MAPPED_ROLE(human.job)
 			marine_pop_size += 1 //GLOB.RoleAuthority.calculate_role_weight(job)
 
 	//This gives a decimal value representing a scaling multiplier. Cannot go below 1

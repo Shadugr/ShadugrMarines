@@ -600,6 +600,8 @@
 			assignment = JOB_TANK_CREW
 		if(JOB_CAS_PILOT)
 			assignment = JOB_CAS_PILOT
+		if(JOB_SYNTH)
+			assignment = JOB_SYNTH
 
 		if(JOB_MARINE_RAIDER)
 			assignment = JOB_MARINE_RAIDER

@@ -28,28 +28,7 @@
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/briefing)
 "bA" = (
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = 3
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 3;
-	pixel_y = 9
-	},
+/obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
 "cU" = (
@@ -674,32 +653,12 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
 "OV" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/machinery/door/airlock/almayer/secure{
+	name = "\improper Synthetic airlock";
+	req_one_access = list();
+	req_access = list(36)
 	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = 3
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/structure/bed/chair{
-	can_buckle = 0;
-	dir = 4;
-	pixel_x = 3;
-	pixel_y = 9
-	},
-/turf/open/floor/almayer,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
 "PR" = (
 /obj/structure/prop/invuln/overhead_pipe{
@@ -728,7 +687,6 @@
 /area/golden_arrow/briefing)
 "PX" = (
 /obj/structure/platform,
-/obj/structure/machinery/power/apc/almayer/east,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -950,7 +908,7 @@ Nt
 Nt
 PX
 bA
-OV
+HI
 Nt
 Op
 tL
@@ -962,7 +920,7 @@ Uk
 (8,1,1) = {"
 Nt
 Nt
-Nt
+OV
 Nt
 Nt
 iM

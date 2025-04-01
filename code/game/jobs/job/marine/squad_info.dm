@@ -180,6 +180,8 @@
 					rank = "CRMN"
 				if(JOB_CAS_PILOT)
 					rank = "GP"
+				if(JOB_SYNTH)
+					rank = "Syn"
 				else
 					rank = ""
 			squad_info_data["fireteams"][team]["sqldr"] += list("rank" = rank)
@@ -263,6 +265,8 @@
 						rank = "CRMN"
 					if(JOB_CAS_PILOT)
 						rank = "GP"
+					if(JOB_SYNTH)
+						rank = "Syn"
 					else
 						rank = ""
 				if(H.rank_fallback)
@@ -316,6 +320,8 @@
 						rank = "CRMN"
 					if(JOB_CAS_PILOT)
 						rank = "GP"
+					if(JOB_SYNTH)
+						rank = "Syn"
 					else
 						rank = ""
 				mar[H.real_name] += list("rank" = rank)

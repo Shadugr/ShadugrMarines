@@ -778,14 +778,15 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "acV" = (
-/obj/effect/landmark/start/bridge,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
 /obj/structure/prop/invuln/overhead_pipe{
 	icon = 'icons/obj/structures/props/almayer_props.dmi';
 	icon_state = "wallpipe_2";
 	pixel_y = 8;
 	dir = 8
+	},
+/obj/effect/landmark/start/tank_crew{
+	job = /datum/job/command/tank_crew/ai
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
@@ -2459,6 +2460,11 @@
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 2;
+	pixel_x = -1
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aiM" = (
@@ -3261,15 +3267,13 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/platoonprep)
 "alI" = (
-/obj/structure/surface/table/almayer,
-/obj/item/weapon/straight_razor{
-	pixel_x = -5;
-	pixel_y = -5
+/obj/structure/closet/secure_closet/marine_personal{
+	job = "Platoon Commander"
 	},
-/obj/item/clothing/head/cmcap/bridge{
-	pixel_y = 6;
-	pixel_x = 5
-	},
+/obj/item/clothing/under/marine/officer/boiler,
+/obj/item/clothing/suit/storage/jacket/marine/service,
+/obj/item/clothing/suit/storage/jacket/marine/dress/officer/bomber,
+/obj/item/clothing/under/marine/officer/bridge,
 /turf/open/floor/almayer/edge/smooth/southwest,
 /area/golden_arrow/platoon_commander_rooms)
 "alK" = (
@@ -3608,6 +3612,12 @@
 	icon_state = "door_warning";
 	dir = 1
 	},
+/obj/effect/landmark/late_join{
+	job = "Platoon Commander"
+	},
+/obj/effect/landmark/start/bridge{
+	job = /datum/job/command/bridge/ai
+	},
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/golden_arrow/platoon_commander_rooms)
 "amP" = (
@@ -3840,15 +3850,10 @@
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/hangar)
 "anC" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/pipes/standard/manifold/hidden/supply,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "anE" = (
@@ -4048,6 +4053,14 @@
 /obj/item/tool/pen{
 	pixel_x = -8;
 	pixel_y = 2
+	},
+/obj/item/clothing/head/cmcap/bridge{
+	pixel_y = 6;
+	pixel_x = 5
+	},
+/obj/item/weapon/straight_razor{
+	pixel_x = -5;
+	pixel_y = -5
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/platoon_commander_rooms)
@@ -5317,9 +5330,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
 "asK" = (
-/obj/effect/landmark/start/marine/leader/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/tank_crew{
+	job = /datum/job/command/tank_crew/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "asL" = (
@@ -5906,15 +5920,15 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/platoonprep)
 "auV" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
 	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
+/obj/structure/machinery/cryopod/big/flipped{
+	pixel_y = 6;
+	pixel_x = -8
 	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/cryo_cells)
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoon_commander_rooms)
 "avb" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/dorms)
@@ -6353,6 +6367,9 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "awT" = (
@@ -6687,11 +6704,11 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "axL" = (
-/obj/effect/landmark/start/marine/smartgunner/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
 /turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/cryo_cells)
+/area/golden_arrow/hangar)
 "axM" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -7191,9 +7208,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
 "azh" = (
-/obj/effect/landmark/start/marine/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/alpha{
+	job = /datum/job/marine/standard/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "azi" = (
@@ -8628,6 +8646,9 @@
 /area/golden_arrow/hangar)
 "aDJ" = (
 /obj/structure/machinery/power/apc/almayer/north,
+/obj/structure/closet/secure_closet/marine_personal{
+	job = "Synthetic"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
 "aDL" = (
@@ -8978,9 +8999,10 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aEI" = (
-/obj/effect/landmark/start/marine/medic/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/pilot/cas_pilot{
+	job = /datum/job/command/pilot/cas_pilot/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aEK" = (
@@ -9054,10 +9076,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aEZ" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 10
 	},
-/turf/open/floor/almayer/plate,
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/cryo_cells)
 "aFb" = (
 /obj/structure/platform_decoration{
@@ -9131,12 +9153,8 @@
 /area/golden_arrow/hangar)
 "aFo" = (
 /obj/structure/closet/secure_closet/marine_personal{
-	job = "Platoon Commander"
+	job = "Gunship Pilot"
 	},
-/obj/item/clothing/under/marine/officer/boiler,
-/obj/item/clothing/suit/storage/jacket/marine/service,
-/obj/item/clothing/suit/storage/jacket/marine/dress/officer/bomber,
-/obj/item/clothing/under/marine/officer/bridge,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aFr" = (
@@ -9190,9 +9208,10 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
 "aFy" = (
-/obj/effect/landmark/start/marine/tl/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/smartgunner/alpha{
+	job = /datum/job/marine/smartgunner/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aFz" = (
@@ -10056,19 +10075,15 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/prep_hallway)
 "aIB" = (
-/obj/structure/prop/invuln{
-	icon = 'icons/obj/structures/structures.dmi';
-	icon_state = "ladder11";
-	pixel_y = 10;
-	desc = "A sturdy metal ladder.";
-	name = "ladder";
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /obj/structure/sign/safety/ladder{
 	pixel_x = -17
+	},
+/obj/structure/ladder{
+	pixel_y = 10;
+	id = "synthlad"
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)
@@ -11072,6 +11087,10 @@
 /obj/structure/pipes/vents/pump{
 	dir = 4
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aMq" = (
@@ -12032,6 +12051,10 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aPM" = (
@@ -12181,14 +12204,15 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aQQ" = (
-/obj/effect/landmark/start/marine/medic/alpha,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
 /obj/structure/prop/invuln/overhead_pipe{
 	icon = 'icons/obj/structures/props/almayer_props.dmi';
 	icon_state = "wallpipe_2";
 	pixel_y = 8;
 	dir = 8
+	},
+/obj/effect/landmark/start/marine/tl/alpha{
+	job = /datum/job/marine/tl/ai
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
@@ -12892,6 +12916,9 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
 "aTj" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 5
+	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/cryo_cells)
 "aTl" = (
@@ -12998,8 +13025,15 @@
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/golden_arrow/hangar)
 "aTD" = (
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/platoon_commander_rooms)
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_x = -1
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 10
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "aTE" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -13732,8 +13766,13 @@
 	icon_state = "SW-out";
 	pixel_x = -1
 	},
-/obj/structure/sign/banners/united_americas_flag{
-	pixel_y = 30
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 2;
+	pixel_x = -1
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 5
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -14092,6 +14131,11 @@
 /obj/structure/surface/table/almayer,
 /obj/item/prop/almayer/comp_closed{
 	pixel_y = 10
+	},
+/obj/item/device/encryptionkey/secsrg{
+	pixel_y = -6;
+	pixel_x = 5;
+	name = "\improper Platoon Commander Radio Encryption Key"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
@@ -15245,6 +15289,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
+"cwO" = (
+/obj/structure/machinery/power/apc/almayer/east,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/briefing)
 "cxa" = (
 /obj/structure/barricade/handrail,
 /obj/structure/barricade/handrail{
@@ -15648,6 +15696,11 @@
 	icon_state = "NE-out";
 	pixel_y = 1;
 	pixel_x = 1
+	},
+/obj/structure/ladder{
+	pixel_y = 0;
+	id = "synthlad";
+	height = -1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
@@ -16769,8 +16822,10 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/supply)
 "hSW" = (
-/obj/effect/landmark/start/marine/leader/alpha,
-/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/leader/alpha{
+	job = /datum/job/marine/leader/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "hUp" = (
@@ -17201,7 +17256,7 @@
 	},
 /obj/structure/closet/secure_closet/marine_personal{
 	pixel_x = -7;
-	job = "Gunship Pilot"
+	job = "Smartgunner"
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -17521,6 +17576,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
+"laJ" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/tl/alpha{
+	job = /datum/job/marine/tl/ai
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
 "lbo" = (
 /obj/structure/roof/cargocrane_tracks/vertical{
 	pixel_y = 14
@@ -17537,6 +17599,12 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
+"lgS" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_left/west,
+/area/golden_arrow/cryo_cells)
 "ljO" = (
 /obj/structure/cargo_container/wy/right{
 	pixel_y = -17;
@@ -18295,7 +18363,6 @@
 /area/golden_arrow/engineering)
 "nlR" = (
 /obj/structure/platform,
-/obj/structure/machinery/power/apc/almayer/east,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -18980,6 +19047,19 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/engineering)
+"pHA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/pipes/vents/pump{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "pIe" = (
 /obj/structure/roof/cargocrane_tracks/vertical{
 	pixel_y = 14
@@ -19009,6 +19089,12 @@
 	},
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/medical)
+"pLa" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 10
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_right/east,
+/area/golden_arrow/cryo_cells)
 "pLu" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -19182,6 +19268,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/lower_cargo)
+"pYQ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/cryopod/big{
+	dir = 4;
+	layer = 3.1;
+	pixel_x = -5
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/synthcloset)
 "pZs" = (
 /obj/structure/platform{
 	dir = 4;
@@ -19570,6 +19667,12 @@
 	pixel_x = 5
 	},
 /turf/closed/wall/almayer/outer,
+/area/golden_arrow/cryo_cells)
+"rpM" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 10
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "rqE" = (
 /obj/structure/cable/heavyduty{
@@ -20248,6 +20351,12 @@
 	layer = 2.52
 	},
 /obj/structure/machinery/light/double/blue,
+/obj/effect/landmark/start/synthetic{
+	job = /datum/job/civilian/synthetic/ai
+	},
+/obj/effect/landmark/late_join{
+	job = "Synthetic"
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
 "tJa" = (
@@ -20396,6 +20505,14 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
+"uEJ" = (
+/obj/structure/machinery/door/airlock/almayer/secure{
+	name = "\improper Synthetic airlock";
+	req_one_access = list();
+	req_access = list(36)
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/briefing)
 "uJn" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -20562,6 +20679,18 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
+"vAW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/sign/banners/united_americas_flag{
+	pixel_y = 30
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "vCJ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -20958,9 +21087,10 @@
 /turf/open/floor/almayer/test_floor5,
 /area/golden_arrow/synthcloset)
 "wSf" = (
-/obj/effect/landmark/start/bridge,
-/obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/medic/alpha{
+	job = /datum/job/marine/medic/ai
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "wYO" = (
@@ -24151,11 +24281,11 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+aWh
+aWh
+aWh
+aWh
+aWh
 aWh
 aWh
 aWh
@@ -24328,13 +24458,13 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
 aWh
-auV
+pHA
+aAK
+akL
+aAK
+akL
+aqy
 aAK
 aKr
 aAK
@@ -24505,17 +24635,17 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
 aWh
-aEZ
-asK
+vAW
+azh
+azh
+azh
+azh
+aAU
+azh
 aQQ
 wSf
-asK
+wSf
 aAU
 hSW
 aEI
@@ -24523,12 +24653,12 @@ acV
 asK
 aPL
 aFy
-axL
-azh
+aFy
+laJ
 azh
 abh
-aFy
-axL
+azh
+azh
 azh
 azh
 aUY
@@ -24682,12 +24812,12 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
 aWh
+aTD
+ajU
+ajU
+ajU
+aOs
 aWw
 abW
 bUF
@@ -24859,13 +24989,13 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
 aWh
-aLK
+aWh
+aEZ
+aWh
+aWh
+aWh
+lgS
 adW
 aog
 aLK
@@ -25219,7 +25349,7 @@ aEG
 aEG
 aEG
 aWh
-aQd
+pLa
 aTj
 adE
 aqd
@@ -25397,7 +25527,7 @@ aEG
 aEG
 aWh
 aog
-aQr
+rpM
 anC
 aQr
 aog
@@ -29040,7 +29170,7 @@ aYv
 aYv
 avw
 wRv
-aYv
+pYQ
 aYv
 adI
 fKv
@@ -30370,7 +30500,7 @@ aEo
 aEo
 aEo
 nlR
-qba
+cwO
 aVi
 aEo
 dSy
@@ -30546,7 +30676,7 @@ aeA
 aEo
 aEo
 aEo
-aEo
+uEJ
 aEo
 aEo
 awf
@@ -31782,11 +31912,11 @@ aeW
 aZm
 aEt
 aoz
-akb
-akb
-akb
-akb
-akb
+aeW
+aeW
+aeW
+auV
+aeW
 aEo
 aEo
 kXG
@@ -31955,7 +32085,7 @@ arP
 arP
 arP
 arP
-aTD
+adz
 adz
 adz
 adz
@@ -32317,7 +32447,7 @@ adz
 kuD
 quP
 dUY
-quP
+axL
 quP
 quP
 iHt

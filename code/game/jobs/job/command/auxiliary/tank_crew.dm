@@ -13,7 +13,7 @@
 	gear_preset_secondary = /datum/equipment_preset/uscm/tank/lesser_rank
 	entry_message_body = "Your job is to operate and maintain the ship's armored vehicles. You are in charge of representing the armored presence amongst the marines during the operation, as well as maintaining and repairing your own vehicles."
 
-	job_options = list(CPL_VARIANT = "Cpl", SGT_VARIANT = "Sgt")
+	job_options = list(CPL_VARIANT = "CPL", SGT_VARIANT = "SGT")
 
 /datum/job/command/tank_crew/set_spawn_positions(count)
 	if (length(GLOB.clients) >= 200)
@@ -48,6 +48,7 @@
 /obj/effect/landmark/start/tank_crew
 	name = JOB_TANK_CREW
 	job = /datum/job/command/tank_crew
+	icon_state = "tc_spawn"
 
 #undef CPL_VARIANT
 #undef SGT_VARIANT

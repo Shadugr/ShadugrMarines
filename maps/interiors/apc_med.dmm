@@ -10,10 +10,14 @@
 /obj/structure/machinery/recharger{
 	pixel_x = -5
 	},
-/obj/item/storage/surgical_tray{
-	pixel_y = 16
+/obj/item/device/defibrillator{
+	pixel_y = 8
 	},
-/obj/item/device/defibrillator,
+/obj/effect/landmark/interior/spawn/interior_viewport{
+	pixel_x = -6;
+	pixel_y = -11;
+	dir = 1
+	},
 /turf/open/shuttle/vehicle/dark_sterile_green_11,
 /area/interior/vehicle/apc/med)
 "c" = (
@@ -215,9 +219,9 @@
 /obj/structure/machinery/iv_drip{
 	anchored = 1
 	},
-/obj/effect/landmark/interior/spawn/interior_viewport{
-	pixel_x = -6;
-	pixel_y = 23
+/obj/structure/vehicle_locker/med{
+	pixel_y = 27;
+	pixel_x = -7
 	},
 /turf/open/shuttle/vehicle/dark_sterile_green_12,
 /area/interior/vehicle/apc/med)

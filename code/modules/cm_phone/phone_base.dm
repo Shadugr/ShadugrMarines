@@ -40,6 +40,8 @@
 	icon_state = PHONE_RINGING_ICON_STATE
 	if (istype(src, /obj/structure/phone_base/overwatch))
 		message_admins("\n\n\n<h1>[name] (Overwatch Phone) is ringing at [x], [y], [z]!</h1>\n\n")
+		for(var/client/admin in GLOB.admins)
+			SEND_SOUND(admin, sound('sound/machines/telephone/telephone_ring.ogg'))
 
 /obj/structure/phone_base/proc/phone_stopped_ringing()
 	if(icon_state == PHONE_OFF_BASE_UNIT_ICON_STATE)

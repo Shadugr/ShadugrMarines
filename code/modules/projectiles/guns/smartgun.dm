@@ -62,7 +62,7 @@
 	var/accuracy_improvement = 0
 	var/auto_fire = 0
 	var/motion_detector = 0
-	var/drain = 75
+	var/drain = 10
 	var/range = 7
 	var/angle = 2
 	var/list/angle_list = list(180,135,90,60,30)
@@ -356,17 +356,17 @@
 		ammo = ammo_secondary
 		to_chat(user, "[icon2html(src, usr)] You changed \the [src]'s ammo preparation procedures. You now fire armor-piercing rounds, offering greater penetration against armored targets compared to other rounds.")
 		balloon_alert(user, "firing armor-piercing")
-		drain += 50
+		drain += 10
 	else if(ammo == ammo_secondary)
 		ammo = ammo_tertiary
 		to_chat(user, "[icon2html(src, usr)] You changed \the [src]'s ammo preparation procedures. You now fire impact-detonating rounds, which stagger most human-sized hostiles on hit and slow them down.")
 		balloon_alert(user, "firing impact-detonating")
-		drain += 10
+		drain += 5
 	else
 		ammo = ammo_primary
 		to_chat(user, "[icon2html(src, usr)] You changed \the [src]'s ammo preparation procedures. You now fire highly precise rounds. These rounds are accurate and cost less power to operate.")
 		balloon_alert(user, "firing highly precise")
-		drain -= 60
+		drain -= 15
 	playsound(loc,'sound/machines/click.ogg', 25, 1)
 	var/datum/action/item_action/smartgun/toggle_ammo_type/TAT = locate(/datum/action/item_action/smartgun/toggle_ammo_type) in actions
 	TAT.update_icon()
@@ -700,7 +700,7 @@
 	name = "\improper M56A3 'Dirty' smartgun"
 	desc = "The actual firearm in the 4-piece M56A3 Smartgun System. Ruggedized electronics and a slightly lighter frame are the only differences between this and the standard UA-issue A2 model.\nYou may toggle firing restrictions by using a special action.\nAlt-click it to open the feed cover and allow for reloading."
 	flags_gun_features = GUN_WY_RESTRICTED|GUN_SPECIALIST|GUN_WIELDED_FIRING_ONLY
-	drain = 30	//Slightly more power effictient than the basic model
+	drain = 3	//Slightly more power effictient than the basic model
 
 /obj/item/weapon/gun/smartgun/dirty/Initialize(mapload, ...)
 	. = ..()

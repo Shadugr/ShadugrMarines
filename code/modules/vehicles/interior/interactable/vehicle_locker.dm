@@ -158,7 +158,7 @@
 
 /obj/structure/vehicle_locker/med/Initialize()
 	. = ..()
-	container.max_storage_space = 24
+	container.max_storage_space = 26
 	container.can_hold = list(
 							/obj/item/tool/surgery,
 							/obj/item/stack/medical/advanced/bruise_pack,
@@ -177,6 +177,7 @@
 	new /obj/item/tool/surgery/bonesetter(container)
 	new /obj/item/tool/surgery/FixOVein(container)
 	new /obj/item/tool/surgery/surgical_line(container)
+	new /obj/item/tool/surgery/synthgraft(container)
 	new /obj/item/stack/nanopaste(container)
 
 /obj/structure/vehicle_locker/med/get_examine_text(mob/user)

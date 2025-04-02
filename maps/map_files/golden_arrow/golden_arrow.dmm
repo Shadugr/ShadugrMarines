@@ -16081,6 +16081,12 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/door_control{
+	pixel_y = -7;
+	pixel_x = -22;
+	id = "synth_brief";
+	name = "synth blast door control"
+	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/briefing)
 "ftY" = (
@@ -20510,6 +20516,11 @@
 	name = "\improper Synthetic airlock";
 	req_one_access = list();
 	req_access = list(36)
+	},
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4;
+	name = "\improper Synthetic Blast Door";
+	id = "synth_brief"
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/briefing)

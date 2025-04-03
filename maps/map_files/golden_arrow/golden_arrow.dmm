@@ -801,8 +801,7 @@
 	desc = "Semiotic Standard denoting the nearby presence of a hypersleep bay."
 	},
 /obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 0;
-	density = 0
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/edge/northwest,
 /area/golden_arrow/prep_hallway)
@@ -8675,8 +8674,7 @@
 	light_power = 0.7
 	},
 /obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 1;
-	density = 0
+	pixel_y = 1
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
@@ -14118,6 +14116,7 @@
 	pixel_x = -21
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "aXI" = (
@@ -17292,6 +17291,7 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
 "jXa" = (
+/obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/briefing)
 "jYS" = (
@@ -18585,8 +18585,7 @@
 /area/golden_arrow/lower_cargo)
 "nLR" = (
 /obj/structure/machinery/cm_vending/gear/medic_chemical{
-	pixel_y = 0;
-	density = 0
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
@@ -20659,8 +20658,7 @@
 	icon_state = "S"
 	},
 /obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = -1;
-	density = 0
+	pixel_y = -1
 	},
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/medical)

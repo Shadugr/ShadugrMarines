@@ -14116,7 +14116,6 @@
 	pixel_x = -21
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
 "aXI" = (
@@ -17291,7 +17290,6 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
 "jXa" = (
-/obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/briefing)
 "jYS" = (

@@ -320,10 +320,6 @@
 	var/dat = "<html><body onselectstart='return false;'><center>"
 	dat += "Round Duration: [floor(hours)]h [floor(mins)]m<br>"
 
-	var/admin_bypass = FALSE
-	if(src.client?.admin_holder?.check_for_rights(R_ADMIN))
-		admin_bypass = TRUE
-
 	if(SShijack)
 		switch(SShijack.evac_status)
 			if(EVACUATION_STATUS_INITIATED)
@@ -335,8 +331,6 @@
 
 	for(var/i in GLOB.RoleAuthority.roles_for_mode)
 		var/datum/job/J = GLOB.RoleAuthority.roles_for_mode[i]
-		if(J.title == JOB_SYNTH && !admin_bypass)
-			continue
 		if(!GLOB.RoleAuthority.check_role_entry(src, J, TRUE))
 			continue
 		var/active = 0

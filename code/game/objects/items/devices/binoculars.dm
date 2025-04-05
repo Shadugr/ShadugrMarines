@@ -343,8 +343,12 @@
 		laser = LT
 
 		var/turf/userloc = get_turf(user)
+		var/turf/laserloc = get_turf(laser)
 		msg_admin_niche("Laser target [las_name] has been designated by [key_name(user, 1)] at ([TU.x], [TU.y], [TU.z]). [ADMIN_JMP(userloc)]")
 		log_game("Laser target [las_name] has been designated by [key_name(user, 1)] at ([TU.x], [TU.y], [TU.z]).")
+		message_admins("<h1>Laser target [las_name] has been designated by [key_name(user, 1)] at ([TU.x], [TU.y], [TU.z]). [ADMIN_JMP(laserloc)]</h1>")
+		for(var/client/admin in GLOB.admins)
+			SEND_SOUND(admin, sound('sound/effects/binoctarget.ogg'))
 
 		playsound(src, 'sound/effects/binoctarget.ogg', 35)
 		while(laser)

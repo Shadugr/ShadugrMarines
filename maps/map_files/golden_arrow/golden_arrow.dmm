@@ -16789,6 +16789,11 @@
 	req_one_access = list();
 	req_access = list(22)
 	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff";
+	light_power = 0.7
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "hMX" = (
@@ -19146,11 +19151,6 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/engineering)
 "pPR" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 8;
-	light_color = "#dae2ff";
-	light_power = 0.7
-	},
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad{
 	req_one_access = list();
 	req_access = list(22)
@@ -32284,7 +32284,7 @@ awL
 awL
 awL
 awL
-aEo
+awL
 awL
 aEG
 aEG

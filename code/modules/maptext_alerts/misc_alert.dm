@@ -87,7 +87,7 @@
 /atom/movable/screen/text/screen_text/potrait
 	screen_loc = "LEFT,TOP-3"
 	maptext_height = 64
-	maptext_width = 480
+	maptext_width = 400
 	maptext_x = 66
 	maptext_y = 0
 	letters_per_update = 2
@@ -125,6 +125,7 @@
 /atom/movable/screen/text/screen_text/picture/potrait_custom_mugshot
 	image_to_play = "custom"
 	screen_loc = "LEFT,TOP-3"
+	maptext_width = 400
 	image_to_play_offset_y = 0
 	maptext_y = 0
 	letters_per_update = 2

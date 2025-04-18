@@ -2,6 +2,8 @@
 #define MARINE_MAJOR_ROUND_END_DELAY (3 MINUTES)
 #define LZ_HAZARD_START (3 MINUTES)
 
+GLOBAL_VAR_INIT(intro_played, FALSE)
+
 /datum/game_mode/colonialmarines
 	name = "Distress Signal"
 	config_tag = "Distress Signal"
@@ -408,22 +410,24 @@
 	clear_lz_hazards()
 
 /datum/game_mode/colonialmarines/proc/intro_sequence()
-	for(var/mob/living/carbon/human/human as anything in GLOB.alive_human_list)
-		if(human.z != ZTRAIT_GROUND)
-			switch(human.faction)
-				if(FACTION_MARINE)
-					if(human.assigned_squad && human.assigned_squad.name == SQUAD_LRRP)
-						human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "███<br>" + "█:█, ██<br>" + "Snake Eaters<br>" + "[human.job], ███<br>", /atom/movable/screen/text/screen_text/picture/snake_eater)
-					else
-						human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "3rd Bat. 'Solar Devils<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/solar_devils)
-				if(FACTION_UPP)
-					human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "Red Dawn<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/red_dawn)
-				if(FACTION_PMC)
-					human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "Azure-15<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/azure)
-			var/admin_names
-			for(var/client/admin in GLOB.admins)
-				admin_names += "[admin.ckey]<br>"
-			human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'>Directed by: <br>[admin_names]", /atom/movable/screen/text/screen_text)
+	if(GLOB.intro_played == FALSE)
+		for(var/mob/living/carbon/human/human as anything in GLOB.alive_human_list)
+			if(human.z != ZTRAIT_GROUND)
+				switch(human.faction)
+					if(FACTION_MARINE)
+						if(human.assigned_squad && human.assigned_squad.name == SQUAD_LRRP)
+							human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "███<br>" + "█:█, ██<br>" + "Snake Eaters<br>" + "[human.job], ███<br>", /atom/movable/screen/text/screen_text/picture/snake_eater)
+						else
+							human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "3rd Bat. 'Solar Devils<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/solar_devils)
+					if(FACTION_UPP)
+						human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "Red Dawn<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/red_dawn)
+					if(FACTION_PMC)
+						human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'><u>[uppertext(GLOB.round_statistics.round_name)]</u></span><br>" + "[SSmapping.configs[GROUND_MAP].map_name]<br>" + "[worldtime2text("hh:mm")], [time2text(REALTIMEOFDAY, "DD-MMM-[GLOB.game_year]")]<br>" + "Azure-15<br>" + "[human.job], [human]<br>", /atom/movable/screen/text/screen_text/picture/azure)
+				var/admin_names
+				for(var/client/admin in GLOB.admins)
+					admin_names += "[admin.ckey]<br>"
+				human.play_screen_text("<span class='maptext' style=font-size:24pt;text-align:left valign='top'>Directed by: <br>[admin_names]", /atom/movable/screen/text/screen_text)
+				GLOB.intro_played = TRUE
 ///////////////////////////
 //Checks to see who won///
 //////////////////////////

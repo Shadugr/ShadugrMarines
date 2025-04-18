@@ -26,9 +26,14 @@ GLOBAL_LIST_INIT(cm_vending_gear_tl, list(
 		list("SU-6 Smartpistol Magazine (.45)", 10, /obj/item/ammo_magazine/pistol/smart, null, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARMS", 0, null, null, null),
-		list("VP78 Pistol", 10, /obj/item/storage/box/guncase/vp78, null, VENDOR_ITEM_REGULAR),
-		list("SU-6 Smart Pistol", 15, /obj/item/storage/box/guncase/smartpistol, null, VENDOR_ITEM_REGULAR),
-		list("M79 Grenade Launcher", 30, /obj/item/storage/box/guncase/m79, null, VENDOR_ITEM_REGULAR),
+		list("VP78 Pistol", 8, /obj/item/storage/box/guncase/vp78, null, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smart Pistol", 12, /obj/item/storage/box/guncase/smartpistol, null, VENDOR_ITEM_REGULAR),
+		list("M240 Incinerator Unit", 8, /obj/item/storage/box/guncase/flamer, null, VENDOR_ITEM_REGULAR),
+		list("XM99A plasma pulse rifle", 20, /obj/item/storage/box/guncase/heavy/XM99, null, VENDOR_ITEM_REGULAR),
+		list("M79 Grenade Launcher", 24, /obj/item/storage/box/guncase/m79, null, VENDOR_ITEM_REGULAR),
+		list("M41AE2 heavy pulse rifle", 24, /obj/item/storage/box/guncase/lmg, null, VENDOR_ITEM_REGULAR),
+		list("M56D Heavy Machine Gun", 25, /obj/item/storage/box/guncase/m56d, null, VENDOR_ITEM_REGULAR),
+		list("M2C Heavy Machine Gun", 30, /obj/item/storage/box/guncase/m2c, null, VENDOR_ITEM_REGULAR),
 
 		list("ARMORS", 0, null, null, null),
 		list("M3 B12 Pattern Marine Armor", 30, /obj/item/clothing/suit/storage/marine/medium/leader, null, VENDOR_ITEM_REGULAR),

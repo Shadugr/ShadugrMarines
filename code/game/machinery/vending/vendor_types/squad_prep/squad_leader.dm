@@ -96,10 +96,14 @@ GLOBAL_LIST_INIT(cm_vending_gear_leader, list(
 		list("M240 Incinerator Tank (B-Gel)", 3, /obj/item/ammo_magazine/flamer_tank/gellied, null, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARMS", 0, null, null, null),
-		list("M240 Incinerator Unit", 18, /obj/item/storage/box/guncase/flamer, null, VENDOR_ITEM_REGULAR),
-		list("VP78 Pistol", 8, /obj/item/storage/box/guncase/vp78, null, VENDOR_ITEM_REGULAR),
-		list("SU-6 Smart Pistol", 12, /obj/item/storage/box/guncase/smartpistol, null, VENDOR_ITEM_REGULAR),
+		list("VP78 Pistol", 6, /obj/item/storage/box/guncase/vp78, null, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smart Pistol", 8, /obj/item/storage/box/guncase/smartpistol, null, VENDOR_ITEM_REGULAR),
+		list("M240 Incinerator Unit", 6, /obj/item/storage/box/guncase/flamer, null, VENDOR_ITEM_REGULAR),
+		list("XM99A plasma pulse rifle", 15, /obj/item/storage/box/guncase/heavy/XM99, null, VENDOR_ITEM_REGULAR),
 		list("M79 Grenade Launcher", 18, /obj/item/storage/box/guncase/m79, null, VENDOR_ITEM_REGULAR),
+		list("M41AE2 heavy pulse rifle", 16, /obj/item/storage/box/guncase/lmg, null, VENDOR_ITEM_REGULAR),
+		list("M56D Heavy Machine Gun", 20, /obj/item/storage/box/guncase/m56d, null, VENDOR_ITEM_REGULAR),
+		list("M2C Heavy Machine Gun", 25, /obj/item/storage/box/guncase/m2c, null, VENDOR_ITEM_REGULAR),
 
 		list("RADIO KEYS", 0, null, null, null),
 		list("Engineering Radio Encryption Key", 5, /obj/item/device/encryptionkey/engi, null, VENDOR_ITEM_REGULAR),

@@ -326,7 +326,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 	dat += "<center>"
 	dat += "<a[current_menu == MENU_MARINE ? " class='linkOff'" : ""] href=\"byond://?src=\ref[user];preference=change_menu;menu=[MENU_MARINE]\"><b>Human</b></a> - "
-	dat += "<a[current_menu == MENU_PLTCO ? " class='linkOff'" : ""] href=\"byond://?src=\ref[user];preference=change_menu;menu=[MENU_PLTCO]\"><b>Platoon Commander</b></a> - "
+	dat += "<a[current_menu == MENU_PLTCO ? " class='linkOff'" : ""] href=\"byond://?src=\ref[user];preference=change_menu;menu=[MENU_PLTCO]\"><b>Platoon</b></a> - "
 	dat += "<a[current_menu == MENU_XENOMORPH ? " class='linkOff'" : ""] href=\"byond://?src=\ref[user];preference=change_menu;menu=[MENU_XENOMORPH]\"><b>Xenomorph</b></a> - "
 	if(owner.check_whitelist_status(WHITELIST_COMMANDER))
 		dat += "<a[current_menu == MENU_CO ? " class='linkOff'" : ""] href=\"byond://?src=\ref[user];preference=change_menu;menu=[MENU_CO]\"><b>Commanding Officer</b></a> - "

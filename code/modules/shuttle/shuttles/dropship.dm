@@ -134,7 +134,7 @@
 			air.handle_multidoor(old_dir, new_dir)
 
 /obj/docking_port/mobile/marine_dropship/midway
-	name = "Midway"
+	name = "Sapling"
 	id = DROPSHIP_MIDWAY
 	width = 11
 	height = 18

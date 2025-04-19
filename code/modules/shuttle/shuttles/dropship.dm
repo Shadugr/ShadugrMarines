@@ -425,7 +425,7 @@
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_HIJACK_LANDED)
 
 /datum/map_template/shuttle/midway
-	name = "Midway"
+	name = "Sapling"
 	shuttle_id = DROPSHIP_MIDWAY
 
 /datum/map_template/shuttle/alamo

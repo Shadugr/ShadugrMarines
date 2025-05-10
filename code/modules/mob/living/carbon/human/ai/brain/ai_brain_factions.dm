@@ -116,9 +116,7 @@
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
-		FACTION_CANC,
-		FACTION_TWE_REBEL,
-		FACTION_UA_REBEL,
+		FACTION_CLF,
 	)
 
 /datum/human_ai_faction/contractor
@@ -137,9 +135,6 @@
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_MERCENARY,
-		FACTION_CANC,
-		FACTION_TWE_REBEL,
-		FACTION_UA_REBEL,
 	)
 
 /datum/human_ai_faction/merc
@@ -158,9 +153,6 @@
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_CANC,
-		FACTION_TWE_REBEL,
-		FACTION_UA_REBEL,
 	)
 
 /datum/human_ai_faction/lancer
@@ -179,174 +171,6 @@
 	neutral_factions = list(
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
-		FACTION_CANC,
-		FACTION_TWE_REBEL,
-		FACTION_UA_REBEL,
-	)
-
-/datum/human_ai_faction/twerebel
-	faction = FACTION_TWE_REBEL
-	friendly_factions = list(
-		FACTION_COLONIST,
-	)
-	neutral_factions = list(
-		FACTION_SURVIVOR,
-	)
-	enter_combat_lines = list(
-		"You will never defeat us!",
-		"I will kill you!",
-		"You'll never take our homeland!",
-		"For the colonies!",
-		"Free colony!",
-		"We will triumph over these infidels!",
-		"Attack!",
-		"Charge!",
-		"CHARGE!",
-		"NO MERCY!",
-		"No mercy!",
-		"NO QUARTER!",
-		"No quarter!",
-		"Die!",
-		"Give up!",
-		"YOU'VE ALREADY LOST!",
-		"WHILE WE STILL DRAW BREATH, WE WILL FIGHT!",
-	)
-	exit_combat_lines = list(
-		"STOP SHOOTING!",
-		"Cease fire!",
-		"Cease your fire!",
-		"Hold your fire!",
-		"HOLD FIRE!",
-		"We're clear!",
-		"Are we clear?",
-		"Looks clear!",
-		"CLEAR!",
-		"Stay vigilant!",
-		"There may be more- stay vigilant.",
-	)
-	squad_member_death_lines = list(
-		"FUCK!",
-		"SHIT!",
-		"CRAP!",
-		"MOTHERFUCKER!",
-		"DAMN IT!",
-		"WE'RE HURT!",
-		"THEY GOT THEM-- IT WON'T GO UNPAID FOR!",
-		"YOU'LL PAY, MOTHERFUCKER!",
-		"YOU'LL PAY, ASSHOLE!",
-		"THEY'RE DOWN!",
-		"THEY'RE DEAD!",
-		"THEY GOT THEM!",
-		"NO!",
-		"No!",
-		"IT WON'T HAVE BEEN IN VAIN, COMRADE!",
-		"NOT IN VAIN, COMRADE!",
-		"COMRADE!",
-	)
-	grenade_thrown_lines = list(
-		"EAT THIS!",
-		"GRENADE BEING THROWN!",
-		"THROWING A GRENADE!",
-		"PUSH THEM BACK!",
-		"FOR THE PEOPLE'S REVOLUTION!",
-		"FOR OUR FRIENDS AND FAMILIES!",
-		"FOR THE OPPRESSED MASSES!",
-		"FIGHT TO THE LAST!",
-		"POWER TO THE PEOPLE!",
-		"POWER TO THE PROLITARIAT!",
-		"DEFEND THE DREAM!",
-		"DEFEND THE REVOLUTION!",
-	)
-	reload_lines = list(
-		"RELOADING!",
-		"Reloading!",
-		"Swapping magazines!",
-		"Swapping mags!",
-		"Changing magazines!",
-		"Changing mags!",
-		"Cover me, reloading!",
-		"NEED COVERING FIRE!",
-		"COVER ME!",
-		"I HAVE TO RELOAD!",
-	)
-	reload_internal_mag_lines = list(
-		"RELOADING!",
-		"Reloading!",
-		"Cover me, reloading!",
-		"NEED COVERING FIRE!",
-		"COVER ME, RELOADING!",
-		"COVER ME!",
-		"I HAVE TO RELOAD!",
-	)
-/datum/human_ai_faction/uarebels
-	faction = FACTION_UA_REBEL
-	friendly_factions = list(
-		FACTION_COLONIST,
-	)
-	neutral_factions = list(
-		FACTION_SURVIVOR,
-	)
-	enter_combat_lines = list(
-		"CONTACT!",
-		"Contact!",
-		"I GOT CONTACT!",
-		"SHIT- CONTACT!",
-		"CONTACT, FRONT!",
-		"WE GOT CONTACT!",
-		"Look alive!",
-		"GUNS UP!",
-		"There!",
-		"Over there!",
-		"OPEN FIRE!",
-		"Open fire!",
-		"ENGAGE!",
-		"Engage!",
-		"Weapons free!",
-		"WEAPONS FREE!",
-		"Weapons hot!",
-		"Wipe 'em out!",
-		"Run for your life! You little...!",
-		"You haven't got enough yet?!",
-		"Die! You bastard!",
-		"Damn rat!",
-		"Victory is ours!",
-		"No mercy!",
-		"There will be no mercy for you!",
-		"Die!",
-		"We will die trying to protect our homes!",
-		"Give up!",
-		"For the cause!",
-		"'Till our last breath!",
-	)
-	exit_combat_lines = list(
-		"Where are they.",
-		"There's no one here.",
-		"The enemy is quiet.",
-		"It's quiet.",
-		"There may be more.",
-		"Quiet now...!",
-		"Are we done yet?",
-		"We live to fight again.",
-		"Where are they now?",
-	)
-	squad_member_death_lines = list(
-		"Get back! Get back!",
-		"I'm sorry...",
-		"Shoot! Run!",
-		"Get away!",
-		"Forgive me...!",
-		"This is for our colony!",
-		"I will avenge you!",
-		"Time for payback!",
-		"Not good!",
-		"Damn!",
-	)
-	grenade_thrown_lines = list(
-		"EAT THIS!",
-		"Grenade!",
-		"Throwing bomb!",
-		"*warcry",
-		"This is for you, invader!",
 	)
 
 /datum/human_ai_faction/ua_colonial_forces //CMB & UACG mostly
@@ -891,14 +715,6 @@
 		"Clear blast!",
 		"Heads up!",
 		"Catch!",
-
-/datum/human_ai_faction/canc
-	faction = FACTION_CANC
-	friendly_factions = list(
-		FACTION_COLONIST,
-	)
-	neutral_factions = list(
-		FACTION_SURVIVOR,
 	)
 
 /datum/human_ai_faction/wy

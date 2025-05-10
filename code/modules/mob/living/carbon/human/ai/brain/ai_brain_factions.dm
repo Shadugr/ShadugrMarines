@@ -99,8 +99,98 @@
 
 /datum/human_ai_faction/clf
 	faction = FACTION_CLF
+/datum/human_ai_faction/colonist
+	faction = FACTION_COLONIST
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/contractor
+	faction = FACTION_CONTRACTOR
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/merc
+	faction = FACTION_MERCENARY
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/lancer
+	faction = FACTION_FREELANCER
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/twerebel
+	faction = FACTION_TWE_REBEL
 	friendly_factions = list(
 		FACTION_COLONIST,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
 	)
 	enter_combat_lines = list(
 		"You will never defeat us!",
@@ -111,7 +201,109 @@
 		"We will triumph over these infidels!",
 		"Attack!",
 		"Charge!",
-		"Die with freedom!",
+		"CHARGE!",
+		"NO MERCY!",
+		"No mercy!",
+		"NO QUARTER!",
+		"No quarter!",
+		"Die!",
+		"Give up!",
+		"YOU'VE ALREADY LOST!",
+		"WHILE WE STILL DRAW BREATH, WE WILL FIGHT!",
+	)
+	exit_combat_lines = list(
+		"STOP SHOOTING!",
+		"Cease fire!",
+		"Cease your fire!",
+		"Hold your fire!",
+		"HOLD FIRE!",
+		"We're clear!",
+		"Are we clear?",
+		"Looks clear!",
+		"CLEAR!",
+		"Stay vigilant!",
+		"There may be more- stay vigilant.",
+	)
+	squad_member_death_lines = list(
+		"FUCK!",
+		"SHIT!",
+		"CRAP!",
+		"MOTHERFUCKER!",
+		"DAMN IT!",
+		"WE'RE HURT!",
+		"THEY GOT THEM-- IT WON'T GO UNPAID FOR!",
+		"YOU'LL PAY, MOTHERFUCKER!",
+		"YOU'LL PAY, ASSHOLE!",
+		"THEY'RE DOWN!",
+		"THEY'RE DEAD!",
+		"THEY GOT THEM!",
+		"NO!",
+		"No!",
+		"IT WON'T HAVE BEEN IN VAIN, COMRADE!",
+		"NOT IN VAIN, COMRADE!",
+		"COMRADE!",
+	)
+	grenade_thrown_lines = list(
+		"EAT THIS!",
+		"GRENADE BEING THROWN!",
+		"THROWING A GRENADE!",
+		"PUSH THEM BACK!",
+		"FOR THE PEOPLE'S REVOLUTION!",
+		"FOR OUR FRIENDS AND FAMILIES!",
+		"FOR THE OPPRESSED MASSES!",
+		"FIGHT TO THE LAST!",
+		"POWER TO THE PEOPLE!",
+		"POWER TO THE PROLITARIAT!",
+		"DEFEND THE DREAM!",
+		"DEFEND THE REVOLUTION!",
+	)
+	reload_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Swapping magazines!",
+		"Swapping mags!",
+		"Changing magazines!",
+		"Changing mags!",
+		"Cover me, reloading!",
+		"NEED COVERING FIRE!",
+		"COVER ME!",
+		"I HAVE TO RELOAD!",
+	)
+	reload_internal_mag_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Cover me, reloading!",
+		"NEED COVERING FIRE!",
+		"COVER ME, RELOADING!",
+		"COVER ME!",
+		"I HAVE TO RELOAD!",
+	)
+/datum/human_ai_faction/uarebels
+	faction = FACTION_UA_REBEL
+	friendly_factions = list(
+		FACTION_COLONIST,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
+	)
+	enter_combat_lines = list(
+		"CONTACT!",
+		"Contact!",
+		"I GOT CONTACT!",
+		"SHIT- CONTACT!",
+		"CONTACT, FRONT!",
+		"WE GOT CONTACT!",
+		"Look alive!",
+		"GUNS UP!",
+		"There!",
+		"Over there!",
+		"OPEN FIRE!",
+		"Open fire!",
+		"ENGAGE!",
+		"Engage!",
+		"Weapons free!",
+		"WEAPONS FREE!",
+		"Weapons hot!",
 		"Wipe 'em out!",
 		"Run for your life! You little...!",
 		"You haven't got enough yet?!",
@@ -170,7 +362,7 @@
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
 		FACTION_TWE,
-		FACTION_UPP,
+		FACTION_PMC,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -240,13 +432,13 @@
 		FACTION_NAVY,
 		FACTION_COLONIST,
 		FACTION_MARSHAL,
-		FACTION_TWE,
-		FACTION_WY,
 	)
 	neutral_factions = list(
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -343,13 +535,13 @@
 		FACTION_MARINE,
 		FACTION_COLONIST,
 		FACTION_MARSHAL,
-		FACTION_TWE,
-		FACTION_WY,
 	)
 	neutral_factions = list(
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -461,13 +653,13 @@
 		FACTION_MARINE,
 		FACTION_COLONIST,
 		FACTION_MARSHAL,
-		FACTION_TWE,
-		FACTION_WY,
 	)
 	neutral_factions = list(
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -535,9 +727,6 @@
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_MARINE,
-		FACTION_ARMY,
-		FACTION_NAVY,
 		FACTION_MERCENARY,
 		FACTION_TWE,
 		FACTION_SURVIVOR,
@@ -702,15 +891,59 @@
 		"Clear blast!",
 		"Heads up!",
 		"Catch!",
+
+/datum/human_ai_faction/canc
+	faction = FACTION_CANC
+	friendly_factions = list(
+		FACTION_COLONIST,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
+	)
+
+/datum/human_ai_faction/wy
+	faction = FACTION_WY
+	friendly_factions = list(
+		FACTION_COLONIST,
+		FACTION_TWE,
+		FACTION_PMC,
+		FACTION_WY_DEATHSQUAD,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+		FACTION_SURVIVOR,
 	)
 
 /datum/human_ai_faction/wy/pmc
 	faction = FACTION_PMC
+	friendly_factions = list(
+		FACTION_COLONIST,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_WY_DEATHSQUAD,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+		FACTION_SURVIVOR,
+	)
 
 /datum/human_ai_faction/wy_deathsquad
 	faction = FACTION_WY_DEATHSQUAD
 	friendly_factions = list(
 		FACTION_WY,
+		FACTION_PMC,
 	)
 	enter_combat_lines = list(
 		"Visual confirmed, engaging.",
@@ -734,6 +967,185 @@
 	reload_lines = list() // same here
 	reload_internal_mag_lines = list()
 	need_healing_lines = list()
+
+
+/datum/human_ai_faction/twe
+	faction = FACTION_TWE
+	friendly_factions = list(
+		FACTION_COLONIST,
+		FACTION_WY,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+	)
+	enter_combat_lines = list(
+		"CONTACT!",
+		"Contact!",
+		"I GOT CONTACT!",
+		"SHIT- CONTACT!",
+		"CONTACT, FRONT!",
+		"WE GOT CONTACT!",
+		"Look alive!",
+		"GUNS UP!",
+		"There!",
+		"Over there!",
+		"OPEN FIRE!",
+		"Open fire!",
+		"ENGAGE!",
+		"Engage!",
+		"Weapons free!",
+		"WEAPONS FREE!",
+		"Weapons hot!",
+		"Wipe 'em out!",
+		"Light 'em up!",
+		"Drop 'em!",
+		"Cut 'em down!",
+		"Bring 'em down!",
+		"Fuck 'em up!",
+		"KILL THE BASTARDS!",
+		"Kill that bastard!",
+		"*warcry",
+		"X-RAY!",
+		"X-RAY SPOTTED!",
+		"TANGO!",
+		"TANGO SPOTTED!",
+		"Bring it!",
+		"BRING IT!",
+		"ENEMY ON APPROACH!",
+		"ACTIVITY!",
+		"Company!",
+		"COMPANY!",
+	)
+	exit_combat_lines = list(
+		"CEASE FIRE!",
+		"Cease fire!",
+		"Cease your fire!",
+		"Hold your fire!",
+		"HOLD FIRE!",
+		"We're clear!",
+		"We clear?",
+		"Looks clear!",
+		"CLEAR!",
+		"Clear!",
+		"Keep your eyes peeled!",
+		"Might be more- Keep your eyes peeled.",
+		"Might be more- Don't get too comfortable.",
+		"Stay quiet.",
+		"Stay sharp.",
+		"Stay sharp!",
+		"Check your vitals.",
+		"We're clear! Take a breather!",
+		"We're clear! Sound off!",
+		"Blimey.",
+		"Bloody hell.",
+		"I got mine...",
+		"Another day in the Her Majesty's service...",
+		"I need a break...",
+		"Need a bloody smoke after that...",
+		"Need a bloody cigarette after that...",
+		"Need a bloody fag after that...",
+		"Need a bloody pint after that...",
+		"For God and Country, they said...",
+		"Rule the bloody waves...",
+		"Never gets easier...",
+		"Our Father, who art in heaven...",
+	)
+	squad_member_death_lines = list(
+		"FUCK!",
+		"SHIT!",
+		"CRAP!",
+		"BLOODY BASTARD!",
+		"GOD DAMN IT!",
+		"WE'RE TAKING HITS HERE!",
+		"THEY GOT THEM-- RETURN FIRE!",
+		"YOU'LL BLOODY WELL PAY, YOU BASTARD!",
+		"THEY'RE DOWN!",
+		"THEY'RE DEAD!",
+		"THEY GOT THEM!",
+		"THEY'RE HIT BAD!",
+		"THEY'RE FUCKING DEAD! THEY'RE FUCKING DEAD!",
+		"GOD DAMN IT, WHY YOU?",
+		"MEDIC, GET THE BLOODY HELL OVER HERE!",
+		"GET DOC OVER HERE!",
+		"DOC!",
+		"MEDIC!",
+		"MARINE DOWN!",
+		"MERCIFUL CHRIST!",
+		"SWEET JESUS!",
+		"MARY, MOTHER OF GOD!",
+		"JESUS CHRIST!",
+		"NO- NO, NOT LIKE THIS, MAN! GET UP!",
+		"DON'T YOU BLOODY DIE ON ME, YOU BASTARD- STAY ALIVE!",
+		"THEY KILLED THEM!",
+	)
+	reload_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Swapping magazines!",
+		"Swapping mags!",
+		"Changing magazines!",
+		"Changing mags!",
+		"Cover me, reloading!",
+		"NEED COVERING FIRE!",
+		"COVER ME!",
+		"RED! RED!-- GREEN!",
+		"I'M RED!",
+		"RED!",
+	)
+	reload_internal_mag_lines = list(
+		"RELOADING!",
+		"Reloading!",
+		"Cover me, reloading!",
+		"NEED COVERING FIRE!",
+		"COVER MY ASS, RELOADING!",
+		"COVER ME!",
+		"RED! RED!-- GREEN!",
+		"I'M RED!",
+		"I NEED A SPEEDLOADER- CHRIST!",
+		"RED!",
+	)
+	grenade_thrown_lines = list(
+		"GRENADE!",
+		"THROWING GRENADE!",
+		"GRENADE, GET CLEAR!",
+		"GRENADE OUT!",
+		"CLEAR OUT, GRENADE!",
+		"TOSSING A GRENADE!",
+		"*warcry",
+	)
+	need_healing_lines = list(
+		"FUCK ME!",
+		"FUCK!",
+		"SHIT!",
+		"CRAP!",
+		"BASTARD!",
+		"CUNT!",
+		"BLOODY HELL!",
+		"GOD DAMN IT!",
+		"JESUS CHRIST!",
+		"BLEEDING!",
+		"MOTHER OF GOD-- NO!",
+		"I'M TAKING HITS HERE!",
+		"I'M HIT!",
+		"I'M HURT!",
+		"INJECTOR GOING IN!",
+		"INJECTOR IN!",
+		"I NEED GAUZE!",
+		"SOMEONE PATCH THIS BLOODY HOLE!",
+		"NEED MORPHINE!",
+		"NEED MORPHINE!",
+		"MEDIC, GET THE BLOODY HELL OVER HERE!",
+		"GET DOC OVER HERE!",
+		"DOC!",
+		"MEDIC!",
+	)
 
 /datum/human_ai_faction/xeno_cultist
 	faction = FACTION_XENOMORPH
